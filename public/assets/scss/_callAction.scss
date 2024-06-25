@@ -1,0 +1,73 @@
+@use './common' as *;
+@use './custom-animation' as *;
+@use './mixins' as *;
+@use './variables' as *;
+
+/*
+=============================
+07. CALLACTION
+=============================
+*/
+
+.bg_idea {
+    padding: 70px 100px;
+    position: relative;
+    background: transparent linear-gradient(90deg, #438FF9 0%, #2B1B9A 100%) 0% 0% no-repeat padding-box;
+    border-radius: 20px;
+}
+h2.idea_heading {
+    font-size: 32px;
+    font-weight: 600;
+    color: $white;
+    line-height: 1.6;
+}
+a.dial_call {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 33px;
+}
+img.idea_area_05 {
+    position: absolute;
+    bottom: 65px;
+    left: 20px;
+    opacity: .3;
+}
+img.idea_area_04 {
+    position: absolute;
+    top: 20px;
+    left: 29%;
+    opacity: .3;
+}
+img.idea_area_01 {
+    bottom: 20px;
+    left: 32%;
+    position: absolute;
+    opacity: .3;
+}
+img.idea_area_02 {
+    position: absolute;
+    bottom: 40px;
+    right: 44%;
+    opacity: .3;
+}
+img.idea_area_03 {
+    position: absolute;
+    right: 20px;
+    top: 52%;
+    opacity: .3;
+}
+.dial {
+    justify-content: end;
+    padding-top: 20px;
+}
+.idea_area {
+    position: relative;
+}
+img.position-absolute.idea_area_06 {
+    top: -79px;
+    left: -151px;
+    z-index: -1;
+}
+.idea_title {
+    position: relative;
+}

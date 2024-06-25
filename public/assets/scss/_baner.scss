@@ -1,0 +1,110 @@
+@use './common' as *;
+@use './custom-animation' as *;
+@use './mixins' as *;
+@use './variables' as *;
+
+/*
+=============================
+04. BANER
+=============================
+*/
+.banar_area{
+    position: relative;
+}
+img.process_shape_01 {
+    position: absolute;
+    right: 188px;
+    top: 25%;
+}
+
+img.process_shape_09 {
+    position: absolute;
+    top: 13%;
+    right: 9%;
+}
+
+img.process_shape_02 {
+    position: absolute;
+    bottom: 93px;
+    right: 283px;
+}
+
+img.process_shape_04 {
+    position: absolute;
+    top: 183px;
+    right: 592px;
+}
+img.process_shape_07 {
+    position: absolute;
+    right: 426px;
+}
+img.process_shape_05 {
+    position: absolute;
+    top: 43%;
+}
+.row.baner_bg{
+    background: $white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 20px;
+    padding-bottom: 0px;
+}
+.banar_content{
+    padding: 50px 45px;
+    position: relative;
+    & h3{
+        margin-bottom: 20px;
+        text-transform: capitalize;
+    }
+    & h2{
+        color: $home_two_secondary;
+        text-transform: capitalize;
+    }
+}
+.banar_btn{
+    background: $home_two_primary;
+    & svg{
+        margin-left: 20px;
+    }
+}
+img.position-absolute.baner_content_o1 {
+    top: 33px;
+    left: 73px;
+}
+
+img.position-absolute.baner_content_o2 {right: -150px;bottom: 20px;}
+
+img.position-absolute.baner_content_o3 {
+    top: 0;
+    right: 0;
+}
+
+img.position-absolute.baner_content_o4 {
+    bottom: 0;
+    left: 310px;
+}
+img.position-absolute.banar_area_01 {
+    top: 169px;
+    left: 0;
+    opacity: .3;
+}
+
+img.position-absolute.banar_area_04 {
+    top: 30px;
+    left: 607px;
+    opacity: .2;
+}
+
+img.position-absolute.banar_area_03 {
+    right: 60px;
+    top: 140px;
+    opacity: .2;
+}
+
+img.position-absolute.banar_area_02 {
+    bottom: -58px;
+    opacity: .3;
+    left: 50%;
+}
+.shadownone{
+    box-shadow: none !important;
+}

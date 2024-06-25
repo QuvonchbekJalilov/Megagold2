@@ -1,0 +1,163 @@
+@use './common' as *;
+@use './custom-animation' as *;
+@use './mixins' as *;
+@use './variables' as *;
+
+
+/*
+=============================
+ABOUT AREA CSS
+=============================
+*/
+
+.about_img_2 {
+    margin-left: 107px;
+}
+.about_images {
+    position: relative;
+}
+img.about_shape_one {
+    position: absolute;
+    top: -2%;
+    transform: translateY(-50%);
+    left: 6%;
+}
+
+@keyframes rotateanim{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+img.about_shape_two {
+    position: absolute;
+    bottom: 67px;
+    left: 20%;
+    animation: float-bob-y 2s infinite;
+}
+img.about_img_one {
+    margin-right: 15px;
+    margin-top: -204px;
+}
+.about_area {
+    padding: 220px 35px;
+    padding-bottom: 130px;
+    position: relative;
+    overflow: hidden;
+}
+img.about_shape_three {
+    position: absolute;
+    right: 20%;
+    top: -107px;
+}
+img.about_img_two {
+    position: relative;
+    animation: float-bob-y 5s linear infinite;
+}
+.rotate {
+    position: absolute;
+    right: 37%;
+    text-transform: uppercase;
+    transform: rotate(270deg);
+    background: #fff;
+    padding: 21px 28px;
+    bottom: 11%;
+    color: #438FF9;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.preview_content {
+    padding-right: 30px;
+}
+.title{
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    line-height: 1.6;
+    text-transform: capitalize;
+    & span{
+        color: #438FF9;
+    }
+}
+.sub_title{
+    font-family: $enter;
+    font-weight: 700;
+    font-size: 20px;
+    color: $secondary_color;
+    margin-bottom: 10px;
+}
+
+.about_content{
+    & h3{
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 2;
+        margin-bottom: 30px;
+    }
+    & p{
+        line-height: 2;
+        font-size: 16px;
+    }
+}
+.about_image_1 {
+    &::before{
+        position: absolute;
+        height: 100px;
+        width: 100px;
+        content: "";
+        left: 56px;
+        top: -52px;
+        border-radius: 50px;
+        border: 1px dashed #707070;
+        animation: rotateanim 5s linear infinite;
+    }
+}
+img.position-absolute.about_o1 {
+    top: 50%;
+    right: 30px;
+    max-width: 6%;
+    transform: translateY(-50%);
+}
+img.position-absolute.about_o2 {
+    top: 143px;
+    left: 29%;
+}
+img.position-absolute.about_o3 {
+    top: 0;
+}
+.subheading {
+    position: relative;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 0;
+}
+.sub_title.subtitle_two{
+    margin-bottom: 0;
+    line-height: 0.60em;
+}
+.banar_button {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 106px;
+}
+.copyright_area {
+    position: relative;
+}
+img.plygon-homepage_two {
+    position: absolute;
+    bottom: 20px;
+}
+.footer_area .copyright_area.bg-none {
+    background: transparent;
+}
+img.ffff-homepage_two {
+    right: 10%;
+    top: 26%;
+}
+img.position-absolute.about_4 {
+    bottom: 63px;
+    left: 9%;
+}

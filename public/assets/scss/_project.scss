@@ -1,0 +1,63 @@
+@use './common' as *;
+@use './custom-animation' as *;
+@use './mixins' as *;
+@use './variables' as *;
+
+/*
+=============================
+13. PROJECT
+=============================
+*/
+.project_area {
+    position: relative;
+    padding: 120px 0;
+    position: relative;
+    padding-bottom: 174px;
+    &::before{
+        background: transparent linear-gradient(111deg, #3BBEFF 0%, #FFA03A63 100%) 0% 0% no-repeat padding-box;
+        opacity: 0.5;
+        position: absolute;
+        content: "";
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+}
+
+//project arrow
+.project_activition.slick-initialized.slick-slider button.slide-arrow.prev-arrow.slick-arrow {
+    position: absolute;
+    top: 123%;
+    right: 45%;
+    height: 44px;
+    width: 44px;
+    line-height: 44px;
+    background: rgb(59, 190, 255,.2);
+    color: $white;
+    &:hover{
+        background-color: rgb(59, 190, 255,.6);
+    }
+}
+
+.project_activition.slick-initialized.slick-slider button.slide-arrow.next-arrow.slick-arrow {
+    position: absolute;
+    top: 123%;
+    right: 51%;
+    height: 44px;
+    width: 44px;
+    line-height: 44px;
+    background: rgb(59, 190, 255,.2);
+    color: $white;
+    &:hover{
+        background-color: rgb(59, 190, 255);
+    }
+}
+.portfolio_area.pdetails {
+    padding-top: 120px;
+}
+button.accordion-button {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 25px 15px;
+}

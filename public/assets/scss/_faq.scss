@@ -1,0 +1,219 @@
+@use './common' as *;
+@use './custom-animation' as *;
+@use './mixins' as *;
+@use './variables' as *;
+/*
+=============================
+09. FAQ
+=============================
+*/
+
+.accordion-wrapper {
+    .card {
+        +.card {
+            margin-top: 20px;
+        }
+        border: none;
+        background-color: transparent;
+        .card-header {
+            background-color: transparent;
+            padding: 0;
+            border: none;
+            a {
+                display: block;
+                font-size: 16px;
+                line-height: 28px;
+                font-weight: 700;
+                background: #FFFFFF 0% 0% no-repeat padding-box;
+                box-shadow: 0px 0px 30px #2B1B9A14;
+                border-radius: 8px;
+                padding: 16px 30px;
+                cursor: pointer;
+                position: relative;
+                padding: 22px 82px;
+                &:after {
+                    position: absolute;
+                    left: 14px;
+                    top: 15px;
+                    content: "\f106";
+                    font-family: "Font Awesome 5 Pro";
+                    height: 42px;
+                    font-size: 24px;
+                    width: 42px;
+                    background: #2B1B9A1A 0% 0% no-repeat padding-box;
+                    border-radius: 50px;
+                    text-align: center;
+                    line-height: 42px;
+                    top: 50%;
+                    color: $secondary_color;
+                    transform: translateY(-50%);
+                }
+                &[aria-expanded="false"] {
+                    &:after {
+                        content: "\f107";
+                        color: $secondary_color;
+                    }
+                }
+            }
+        }
+        .card-body {
+            background-color: #fff;
+            padding: 20px 30px;
+            &.style-01 {
+                padding: 40px 40px;
+                box-shadow: 0 0 40px 0 rgb(0 0 0 / 5%);
+            }
+            &.style-02 {
+                background-color: #fff;
+                padding: 0px 0 20px;
+                line-height: 25px;
+            }
+        }
+    }
+}
+
+.accoridions {
+    .section-title {
+        .title {
+            font-size: 42px;
+            font-weight: 700;
+            color: #000629;
+            line-height: 50px;
+        }
+    }
+}
+
+.cardDesign{
+    border: 3px solid $secondary_color !important;
+    border-radius: 8px;
+}
+img.faq_doted.position-absolute {
+    top: 50%;
+    transform: translateY(-50%);
+    width: 15%;
+    left: -100px;
+}
+img.faq_doted_two.position-absolute {
+    right: 50px;
+    width: 12%;
+    bottom: 0;
+}
+img.clients_09.position-absolute {
+    right: -26px;
+    bottom: -91px;
+}
+.client_meta p {
+    color: #000;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+
+//faq 2
+.faq-section{
+    position: relative;
+    .faq-element{
+        position: absolute;
+        bottom: 60px;
+        right: 60px;
+        animation: rotate 15s linear infinite;
+    }
+}
+.faq-wrapper {
+    margin-bottom: -30px;
+    .faq-item{
+        background-color: $white;
+        border: 3px solid #F1F1F1;
+        padding: 25px;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        transition: all 0.3s;
+        .faq-title{
+            font-size: 22px;
+            align-items: center;
+            cursor: pointer;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 0;
+            @media only screen and (max-width: 991px) {
+                font-size: 18px;
+            }
+            .title{
+                width: calc(100% - 60px);
+                display: inline-block;
+                font-weight: 600;
+                margin-bottom: 0;
+                span{
+                    font-weight: 700;
+                    &.dot{
+                        color: $body-text-color;
+                        margin-right: 15px;
+                    }
+                }
+            }
+        }
+        .faq-content{
+            display: none;
+            padding-top: 30px;
+            p{
+                width: 70%;
+                font-size: 16px;
+                @media only screen and (max-width: 991px) {
+                    width: 100%;
+                }
+            }
+        }
+        .right-icon{
+            display: block;
+            width: 25px;
+            height: 25px;
+            position: relative;
+            &::before{
+                width: 3px;
+                height: 20px;
+                top: 50%;
+                left: 50%;
+            }
+            &::after{
+                width: 20px;
+                height: 3px;
+                top: 50%;
+                left: 50%;
+            }
+            &::before,
+            &::after{
+                position: absolute;
+                content: '';
+                background: $primary_color;
+                -webkit-transition: all ease 0.3s;
+                -moz-transition: all ease 0.3s;
+                transition: all ease 0.3s;
+                -webkit-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+            }
+        }
+        &.active{
+            .faq-content{
+                display: block;
+            }
+            
+        }
+        &.open{
+            border: 3px solid #438FF9;
+            .right-icon{
+                &::before{
+                    -webkit-transform: translate(-50%, -50%) rotate(90deg);
+                    -ms-transform: translate(-50%, -50%) rotate(90deg);
+                    transform: translate(-50%, -50%) rotate(90deg);
+                }
+                &::before,
+                &::after{
+                    background: $primary_color;
+                }
+            }
+        }
+    }
+}

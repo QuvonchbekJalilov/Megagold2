@@ -1,0 +1,209 @@
+@use './common' as *;
+@use './custom-animation' as *;
+@use './mixins' as *;
+@use './variables' as *;
+
+/*
+=============================
+20. HISTORY
+=============================
+*/
+
+.historyy{
+    margin-bottom: 50px;
+    align-items: center;
+    position: relative;
+}
+.historyyCard {
+    position: relative;
+    max-width: 480px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 6px 30px #00000012;
+    padding: 60px 30px;
+    z-index: 13;
+    border-radius: 10px;
+    & h3{
+        font-size: 22px;
+        font-weight: 700;
+        margin-bottom: 11px;
+    }
+    & p{
+        font-size: 15px;
+    }
+}
+.historyy_image {
+    max-width: 480px;
+    position: relative;
+    margin-left: 25px;
+}
+.historyyCard.addtriangle{
+    &::before{
+        position: absolute;
+        content: "";
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 87px 72px 100px;
+        border-color: transparent transparent #ffffff transparent;
+        right: -75px;
+        top: 45px;
+        transform: rotate(86deg);
+        z-index: 2;
+    }
+}
+.historyyCard.aftertringle{
+    &::after{
+        position: absolute;
+        content: "";
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 75px 75px 116px;
+        border-color: transparent transparent #ffffff transparent;
+        left: -79px;
+        top: 65px;
+        transform: rotate(
+            257deg);
+        z-index: -1;  
+    }
+}
+.custom_border{
+    position: relative;
+    margin-left: 97px;
+    &::before{
+        height: 97%;
+        width: 1px;
+        background: #D4D4D4;
+        content: "";
+        left: 540px;
+        top: 49%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        opacity: 1;
+    }
+}
+.history_content_wrapper{
+    position: relative;
+    &::before{
+        position: absolute;
+        content: "";
+        height: 205px;
+        width: 2px;
+        background: #438FF9;
+        left: 0;
+        top: 20%;
+        z-index: 14;
+    }
+}
+.history_wrapper_two{
+    position: relative;
+    &::before{
+        position: absolute;
+        content: "";
+        height: 205px;
+        width: 2px;
+        background: #438FF9;
+        right: 0;
+        top: 20%;
+        z-index: 14;
+    }   
+}
+.history_wrapper_four{
+    position: relative;
+    &::before{
+        position: absolute;
+        content: "";
+        height: 205px;
+        width: 2px;
+        background: #438FF9;
+        left: 0;
+        top: 20%;
+        z-index: 14;
+    } 
+}
+.history_wrapper_three{
+    position: relative;
+    &::before{
+        position: absolute;
+        content: "";
+        height: 205px;
+        width: 2px;
+        background: #438FF9;
+        right: 0;
+        top: 20%;
+        z-index: 14;
+    } 
+}
+
+.since {
+    position: absolute;
+    padding: 8px 20px;
+    background: #fff;
+    border-radius: 8px;
+    top: 30px;
+    right: 30px;
+    color: $primary_color;
+    font-weight: 700;
+}
+.historyyCard.addtriangle::after {
+    position: absolute;
+    content: "";
+    width: 14px;
+    height: 14px;
+    background: #438FF9;
+    left: 521px;
+    top: 74px;
+    border-radius: 50px;
+    outline: 5px solid #ECF4FF;
+}
+.historyy_image.historyy_before::after {
+    position: absolute;
+    content: "";
+    width: 14px;
+    height: 14px;
+    background: #438FF9;
+    left: 523px;
+    top: 51px;
+    border-radius: 50px;
+    outline: 5px solid #ECF4FF;
+}
+.title.history_title {
+    color: #2C2C2C;
+}
+.historyy_image.historyy_before.ml-none {
+    margin-left: 0;
+}
+.history_wrapper_two {
+    position: relative;
+    margin-left: 25px;
+}
+.historyy_image.historyy_before.last_before{
+    margin-left: 0;
+    &::after{
+        left: 520px;
+    }
+}
+.historyy_image.historyy_before.last_before span {
+    position: absolute;
+    left: 30px;
+    display: inline-table;
+}
+.historyy_image.historyy_before.ml-none span{
+    position: absolute;
+    left: 30px;
+    display: inline-table;
+}
+.histor_area {
+    overflow: hidden;
+}
+.historyy_image::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    background: #000;
+    height: 100%;
+    width: 100%;
+    opacity: .3;
+    cursor: pointer;
+}

@@ -1,0 +1,354 @@
+@use './common' as *;
+@use './custom-animation' as *;
+@use './mixins' as *;
+@use './variables' as *;
+
+/*
+=============================
+19. TEAM
+=============================
+*/
+
+.team{
+    position: relative;
+    overflow: hidden;
+    &__thumb{
+        & img{
+            width: 100%;
+        }
+    }
+    &__content{
+        & h4{
+            font-size: 18px;
+            font-weight: 700;
+            text-transform: capitalize;
+        }
+        & p{
+            font-size: 14px;
+        }
+        padding: 25px 27px;
+        position: absolute;
+        bottom: 7px;
+        left: 12px;
+        width: 92%;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        box-shadow: 0px 3px 6px #00000029;
+        border-radius: 5px;
+        transform: translateY(130px);
+        @include transition(.3s);
+        padding-bottom: 10px;
+        &::before{
+            position: absolute;
+            left: 0;
+            height: 42px;
+            width: 7px;
+            content: "";
+            top: 50%;
+            background: $primary_color;
+            transform: translateY(-50%);
+        }
+        &::after{
+            position: absolute;
+            right: 0;
+            height: 42px;
+            width: 7px;
+            content: "";
+            top: 50%;
+            background: $primary_color;
+            transform: translateY(-50%);  
+        }
+    }
+    &:hover .team__content{
+        transform: translateY(0);
+        @include transition(.3s);
+
+    }
+}
+
+.clients_area.about_testimonial {
+    padding-bottom: 230px;
+    padding-top: 80px;
+}
+.subscribe_card.about_subscribe {
+    margin-top: -245px;
+}
+/* social icons effect  */
+.social_icons{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.social_icons ul{
+    display: flex;
+}
+.social_icons ul::before{
+    position: absolute;
+    content: '\f1e0';
+    font-family: "Font Awesome 5 Pro";
+    height: 48px;
+    width: 48px;
+    text-align: center;
+    line-height: 46px;
+    background: #F5C25A;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: 7000;
+    left: 1px;
+    z-index: 2;
+    top: -1px;
+}
+.social_icons ul li{
+    list-style: none;
+    margin: 0 2px;
+    position: absolute;
+    transition: .8s;
+}
+.social_icons ul:hover li:nth-child(1) a{
+    transform: translateX(51px) rotate(360deg);
+    transition-delay: .8;
+    background: #1877F2;
+}
+.social_icons ul:hover li:nth-child(2) a{
+    transform: translateX(100px) rotate(360deg);
+    transition-delay: .6;
+    background: #1DA1F2;
+
+}
+.social_icons ul:hover li:nth-child(3) a{
+    transform: translateX(150px) rotate(360deg);
+    transition-delay: .4;
+    background: #8a3ab9;
+
+}
+.social_icons ul:hover li:nth-child(4) a{
+    transform: translateX(200px) rotate(360deg);
+    transition-delay: .2;
+    background: #CD201F;
+}
+.social_icons ul li a{
+    display: block;
+    height: 46px;
+    width: 46px;
+    background-color: green;
+    color: #fff;
+    text-align: center;
+    line-height: 46px;
+    border-radius: 50px;
+    transition: .3s;
+}
+
+.team_area {
+    margin-bottom: 50px;
+}
+.button-group.filtering_btn.filter-button-group.text-center {
+    padding-top: 100px;
+}
+.button-group.filtering_btn.filter-button-group button{
+    @include transition(.3s);
+    &:hover{
+        background: $primary_color;
+        @include transition(.3s);
+        color: $white;
+    }
+
+}
+.team-details{
+    .team-item{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .team-thumb{
+        width: 370px;
+        border-radius: 5px;
+        overflow: hidden;
+        background-color: #DDE6EF;
+        @media only screen and (max-width: 991px) {
+            width: 100%;
+        }
+    }
+    .team-content-area{
+        width: calc(100% - 370px);
+        padding-left: 30px;
+        @media only screen and (max-width: 991px) {
+            width: 100%;
+            padding-left: 0;
+            padding-top: 30px;
+        }
+        .team-content{
+            background-color: #F8F6FA;
+            padding: 20px;
+            border-radius: 5px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: left;
+            padding-left: 40px;
+            .title{
+                font-weight: 700;
+            }
+            .sub-title{
+                color: #312f32;
+                font-style: normal;
+                font-size: 16px;
+                margin-bottom: 20px;
+                @media only screen and (max-width: 991px) {
+                    font-size: 14px;
+                }
+            }
+            .team-contact-list{
+                li{
+                    color: #000;
+                    font-weight: 500;
+                    margin-bottom: 10px;
+                    list-style-type: none;
+                    i{
+                        color: #646161;
+                        margin-right: 5px;
+                    }
+                }
+            }
+            .team-social-area{
+                position: unset;
+                background-color: transparent;
+                width: auto;
+                height: auto;
+                display: block;
+                margin-top: 10px;
+                span{
+                    color: #312f32;
+                    font-weight: 700;
+                    font-size: 18px;
+                    margin-bottom: 15px;
+                    display: inline-block;
+                }
+                .team-social{
+                    li{
+                        display: inline-block;
+                        a{
+                            border: 1px solid #0e0e0e;
+                            color: #0e0e0e;
+                            &:hover{
+                                border: 1px solid $primary_color;
+                                color: $white;
+                                background-color: $primary_color;
+                            }
+                        }
+                    }
+                    li+li{
+                        margin-top: 0;
+                        margin-left: 8px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.team-widget-area{
+    .team-widget-content{
+        margin-top: 52px;
+        .title{
+            margin-bottom: 15px;
+            font-weight: 600;
+            margin-top: -5px;
+        }
+        p{
+            line-height: 1.9;
+            margin-bottom: 50px;
+        }
+    }
+}
+.team-skill-area{
+    .skill-item{
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 40px 10px;
+        position: relative;
+        overflow: hidden;
+        z-index: 2;
+        text-align: center;
+        transition: all 0.5s;
+        &::before{
+            position: absolute;
+            content: '';
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 2px;
+            background-color: #ddd;
+            transition: all 0.5s;
+            z-index: -1;
+        }
+    }
+    .circle {
+        display: inline-block;
+        position: relative;
+        text-align: center;
+        width: 170px;
+        canvas{
+            border-color: #ddd;
+        }
+        strong{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -90%);
+                -ms-transform: translate(-50%, -90%);
+                    transform: translate(-50%, -90%);
+            font-size: 36px;
+            color: $primary_color;
+        }
+    }
+    .sk-name {
+        margin-top: 15px;
+        display: inline-block;
+        text-transform: uppercase;
+        color: #000;
+        font-weight: 600;
+        font-size: 14px;
+    }
+}
+
+.team-social li {
+    a{
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      text-align: center;
+      display: inline-block;
+      border-radius: 50%;
+      background: transparent;
+      border: 1px solid #ddd;
+      color: #ddd;
+      font-size: 12px;
+      transition: all 0.3s;
+      &:hover{
+        color: $white;
+        background-color: #ddd;
+      }
+    }
+  }
+  .team-social li + li {
+    margin-top: 8px;
+  }
+.subscribe_area.remove-mt{
+    margin-top: 0;
+}
+.title-team-details {
+    font-weight: 600;
+}
+.sub-title.sub-title-bottom {
+    margin-bottom: 13px !important;
+}
+.skill-item.skill-item-two::before {
+    width: 0;
+}
+
+.skill-item.skill-item-two {
+    padding-top: 65px;
+}
+.team-content p {
+    margin-bottom: 16px;
+}

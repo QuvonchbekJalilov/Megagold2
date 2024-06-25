@@ -1,0 +1,66 @@
+@use './common' as *;
+@use './custom-animation' as *;
+@use './mixins' as *;
+@use './variables' as *;
+
+/*
+=============================
+BEFORE AFTER  AREA CSS
+=============================
+*/
+
+.preview_content{
+    & p{
+        font-weight: 500;
+        text-transform: capitalize;
+        margin-bottom: 50px;
+    }
+}
+.preview_area {
+    background: #F2F7FF;
+    padding: 100px 0;
+    position: relative;
+    padding-bottom: 110px;
+}
+img.preview_shape_05 {
+    position: absolute;
+    top: 200px;
+    left: 94px;
+    opacity: .3;
+}
+img.preview_shape_04 {
+    position: absolute;
+    top: 190px;
+    left: 60px;
+    opacity: .3;
+}
+img.preview_shape_03 {
+    position: absolute;
+    bottom: 90px;
+    left: 340px;
+}
+img.preview_shape_03 {
+    position: absolute;
+    bottom: 62px;
+    opacity: .3;
+    left: 268px;
+}
+
+img.preview_shape_01 {
+    position: absolute;
+    right: 57px;
+    opacity: .3;
+}
+
+//preview homepage two
+.preview_area.preview_home_two {
+    background: #fff;
+}
+.pricing_calculator {
+    background: #F8F6FA;
+    padding: 120px 0;
+}
+.pricing_calculator {
+    background: #F8F6FA;
+    padding: 120px 0;
+}

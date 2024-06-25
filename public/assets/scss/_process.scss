@@ -1,0 +1,321 @@
+
+@use './common' as *;
+@use './custom-animation' as *;
+@use './mixins' as *;
+@use './variables' as *;
+
+/*
+=============================
+06. PROCESS
+=============================
+*/
+
+.process_icon {
+    height: 60px;
+    width: 60px;
+    background: #F23674;
+    text-align: center;
+    line-height: 60px;
+    border-radius: 50px;
+    box-shadow: 0px 6px 12px #FF005780;
+    position: relative;
+    margin-bottom: 29px;
+    display: inline-block;
+    @include transition(.3s);
+    margin-left: 10px;
+    &:hover{
+        background: $primary_color;
+    }
+}
+.process_icon::before {
+    position: absolute;
+    height: calc(100% + 20px);
+    width: calc(100% + 20px);
+    background: #fff;
+    content: "";
+    border-radius: 50px;
+    left: -10px;
+    top: -10px;
+    z-index: -2;
+    background: #FFFFFF99 0% 0% no-repeat padding-box;
+    box-shadow: 0px 6px 12px #ff005780;
+    opacity: 1;
+}
+.attribution {
+    display: block;
+    transition: all .8s ease 0s;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    padding: 7px 9px;
+    position: absolute;
+    bottom: -30px;
+    left: 10px;
+    text-decoration: none;
+    z-index: 10;
+    background: rgba(34, 41, 47, 0.04);
+    opacity: 0 !important;
+}
+.process_card {
+    margin-bottom: 50px;
+    margin-right: 20px;
+    @include transition(.5s);
+
+}
+.process_card:hover {
+    transform: translateY(-10px);
+    @include transition(.5s);
+}
+.process_content{
+    & h4{
+        font-weight: 700;
+        font-size: 16px;
+        margin-bottom: 12px;
+        text-transform: uppercase;
+    }
+}
+.process_icon.process_icon_2 {
+    background: #1CACF3;
+    box-shadow: 0px 6px 12px #3BBEFF80;
+    @include transition(.3s);
+    &:hover{
+        background: $primary_color;
+    }
+    &::before{
+        background: #FFFFFF99 0% 0% no-repeat padding-box;
+        box-shadow: 0px 6px 12px #3BBEFF80;
+        opacity: 1;
+    }
+}
+.process_icon.process_icon_3 {
+    background: #AE23F5;
+    box-shadow: 0px 6px 12px #C656FF80;
+    @include transition(.3s);
+    &:hover{
+        background: $primary_color;
+    }
+    &::before{
+        background: #FFFFFF99 0% 0% no-repeat padding-box;
+        box-shadow: 0px 6px 12px #C656FF80;
+        opacity: 1;
+    }
+}
+.process_icon.process_icon_4 {
+    background: #FFA03A;
+    @include transition(.3s);
+    &:hover{
+        background: $primary_color;
+    }
+    &::before{
+        background: #FFFFFFCC 0% 0% no-repeat padding-box;
+        box-shadow: 0px 6px 12px #FFA03A80;
+        opacity: 1;
+    }
+}
+.process_icon.process_icon_5 {
+    background: #15DE9B;
+    box-shadow: 0px 6px 12px #15DE9B80;
+    @include transition(.3s);
+    &:hover{
+        background: $primary_color;
+    }
+    &::before{
+        background: #FFFFFF99 0% 0% no-repeat padding-box;
+        box-shadow: 0px 6px 12px #15DE9B80;
+        opacity: 1;
+    }
+}
+.process_icon.process_icon_6 {
+    background: #7212F1;
+    box-shadow: 0px 6px 12px #7212F180;
+    @include transition(.3s);
+    &:hover{
+        background: $primary_color;
+    }
+    &::before{
+        background: #FFFFFF99 0% 0% no-repeat padding-box;
+        box-shadow: 0px 6px 12px #7212F180;
+        opacity: 1;
+    }
+}
+
+.process_area {
+    position: relative;
+}
+img.process_shape_06 {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+//process for homepage two
+.work_icon {
+    background: #F23674;
+    height: 90px;
+    width: 90px;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 90px;
+}
+.work_circle {
+    width: 145px;
+    height: 145px;
+    border: 1px dashed #f00;
+    display: flex;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    &::before{
+        position: absolute;
+        bottom: 0px;
+        right: 25px;
+        height: 22px;
+        width: 22px;
+        border-radius: 50px;
+        background: #F23674;
+        content: "";
+    }
+}
+
+.work_process_card{
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.next_icon {
+    padding-top: 50px;
+    padding-left: 60px;
+}
+.work_circle_card {
+    padding-left: 40px;
+    position: relative;
+}
+.step_count_two {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    background: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 45px;
+    right: 0;
+    bottom: 0;
+}
+.step_count {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    background: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 45px;
+    left: 0;
+    top: 0;
+}
+.work_circle.work_circle_four{
+    &::before{
+        top: 0;
+        left: 0;
+        transform: translate(10px, 10px);
+    }
+}
+.work_area {
+    background-image: url('../img/home_two_ass/process_work/3334703.png'),linear-gradient(#F2F7FF,#F2F7FF);
+    padding: 120px 0;
+}
+.work_icon.work_icon_two {
+    background: #1CACF3;
+}
+
+.work_icon.work_icon_three {
+    background: #FFA03A;
+}
+
+.work_icon.work_icon_four {
+    background: #15DE9B;
+}
+.work_content{
+    & h4{
+        font-size: 18px;
+    }
+}
+.preview_area.preview_area_two {
+    background: #fff;
+}
+.widget_two.homepage_two ul {
+    padding-left: 13px;
+}
+.step_count.box-shadow-one {
+    box-shadow: 0px 10px 20px #F2367469;
+}
+.step_count_two.box-shadow-two {
+    box-shadow: 0px 10px 20px #3BBEFF73;
+}
+.step_count.box-shadow-three {
+    box-shadow: 0px 10px 20px #FFA03A69;
+}
+.step_count_two.box-shadow-four {
+    box-shadow: 0px 10px 20px #15DE9B85;
+}
+.process_area.process_page.service_process_page {
+    background: #F8F6FA;
+    padding-top: 120px;
+    padding-bottom: 70px;
+    margin-bottom: 0;
+}
+.shoot_card{
+    cursor: pointer;
+    @include transition(.5s);
+    &:hover{
+        &::before{
+            filter: grayscale(1);
+            @include transition(.5s);
+        }
+    }
+}
+.shoot_card:hover .shoot_icon img {
+    filter: grayscale(1);
+}
+.shoot_card:hover .shoot_icon h5 {
+    filter: grayscale(1);
+}
+.shoot_card:hover .shoot_count_1 h2 {
+    filter: grayscale(1);
+}
+.shoot_card:hover .shoot_count_2 h2 {
+    filter: grayscale(1);
+}
+.shoot_card:hover .shoot_count_3 h2 {
+    filter: grayscale(1);
+}
+.process_icon.process_icon_4 {
+    background: #FFA03A;
+    box-shadow: 0px 6px 12px #FFA03A80;
+    @include transition(.3s);
+    &:hover{
+        background: $primary_color;
+    }
+    &::before{
+        background: #FFFFFF99 0% 0% no-repeat padding-box;
+        box-shadow: 0px 6px 12px #7212F180;
+        opacity: 1;
+    }
+}
+.process_card {
+    text-align: left;
+}
+.shoot_icon::before {
+    position: absolute;
+    left: -19px;
+    background-image: url('../img/video/dotted.png');
+    height: 100%;
+    width: 100%;
+    content: "";
+    background-repeat: no-repeat;
+}
+
+.shoot_icon {
+    position: relative;
+}

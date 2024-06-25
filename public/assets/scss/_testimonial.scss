@@ -1,0 +1,127 @@
+@use './common' as *;
+@use './custom-animation' as *;
+@use './mixins' as *;
+@use './variables' as *;
+
+/*
+=============================
+10. TESTIMONIAL
+=============================
+*/
+.testimonial_star i {
+    color: #FFAA00;
+    font-size: 14px;
+}
+.clients_area {
+    overflow: hidden;
+}
+
+.testimonial_star {
+    margin-bottom: 10px;
+}
+
+.testimonial_wrapper{
+    margin: 30px 10px 30px 10px;
+    box-shadow: rgb(149 157 165 / 20%) 0px 8px 9px;
+   & h4{
+    font-size: 18px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    color: $secondary_color;
+    font-weight: 600;
+   }
+}
+
+.client_info {
+    background-color: #F5F6FE;
+    padding: 17px 20px;
+    padding-top: 29px;
+    padding-bottom: 9px;
+    justify-content: space-between !important;
+}
+.testtimonial_content {
+    background-color: $white;
+    padding: 20px;
+    & p{
+        font-size: 16px;
+    }
+}
+.client_meta {
+    margin-left: 22px;
+}
+
+.client_meta{
+   & h4{
+    margin-bottom: 0;
+    text-transform: capitalize;
+    color: #000;
+    margin-bottom: 5px;
+   }
+}
+.clients_area {
+    background: #F8F6FA;
+    padding: 120px 33px;
+    position: relative;
+}
+
+//HOME PAGE TWO 
+.testimonial_wrapper.test_two {
+    position: relative;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 3px solid #F5F6FE;
+    margin-top: 46px;
+    margin-bottom: 28px;
+    max-width: 395px;
+    padding-top: 27px;
+}
+img.test_image_two {
+    margin-top: -11%;
+    margin-left: 24px;
+}
+.clientinfo{
+    & h4{
+        margin-bottom: 5px;
+        font-size: 15px;
+    }
+}
+.client_meta.client_star {
+    margin-left: 80px;
+}
+
+img.position-absolute.quote {
+    right: 28px;
+    top: 15px;
+}
+.testimonial_area.mb-120.clients_area.about_testimonia.service_details {
+    background: #fff;
+    margin-bottom: 0;
+}
+.testtimonial_content {
+    text-align: left;
+}
+.client_meta {
+    text-align: left;
+    margin-top: 10px;
+}
+.client_info_two {
+    background: #F2FCF9;
+}
+.client_info_three {
+    background: #FFF6F4;
+}
+.green_title {
+    color: #49D5AB !important;
+}
+.orange_title {
+    color: #E68069 !important;
+}
+img.clients_10 {
+    bottom: 52px;
+    left: 23%;
+    opacity: .2;
+}
+img.clients_11 {
+    bottom: 45px;
+    right: 20%;
+    opacity: .2;
+}
