@@ -38,7 +38,7 @@ class MainController extends Controller
         $actives = ActiveClient::latest()->take(1)->get();
         $links = Link::latest()->take(1)->get();
         $clients = Image::latest()->take(8)->get();
-        $blogs = Blog::latest()->take(4)->get(['description_uz', 'description_ru', 'description_en', 'photo', 'created_at']);
+        $blogs = Blog::latest()->take(4)->get();
         $blog_text = Blog::latest()->take(1)->get(['title_uz', 'title_ru', 'title_en', 'short_content_uz', 'short_content_ru', 'short_content_en', 'content_uz', 'content_ru', 'content_en']);
         $popular_products = CategoryOfProduct::where('type_id', '=', 1)->paginate(1);
         

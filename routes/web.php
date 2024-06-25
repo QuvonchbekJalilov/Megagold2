@@ -83,4 +83,4 @@ Route::post('orders.store', [OrderController::class, 'store'])->name('orders.sto
 Route::get('/{lang}', function ($lang) {
     session(['lang' => $lang]);
     return back();
-});
+})->where('lang', 'uz|ru|en');
