@@ -378,8 +378,8 @@ $lang = \Illuminate\Support\Facades\App::getLocale();
         <div class="outer-box">
             <div class="auto-container">
                 <div class="sec-title style-three light">
-                    <span class="sub-title">Project We Done</span>
-                    <h2>Let’s View Our Latest Projects</h2>
+                    <!-- <span class="sub-title">Project We Done</span> -->
+                    <h2>{{__('words.katolog')}}</h2>
                 </div>
                 <div class="carousel-outer">
 
@@ -555,8 +555,8 @@ $lang = \Illuminate\Support\Facades\App::getLocale();
     <section class="news-section-four">
         <div class="auto-container">
             <div class="sec-title style-three text-center wow fadeInUp">
-                <span class="sub-title">Service Package</span>
-                <h2>Latest Blog Updates</h2>
+                <span class="sub-title">{{__('words.serv_pac3')}}</span>
+                <h2>{{__('words.blog_upd')}}</h2>
             </div>
             <div class="row">
                 @foreach ($blogs as $blog)

@@ -96,5 +96,16 @@ return
         "radio_txt4" => "Innovatsiya",
         "radio_txt5" => "Jamoaviy ish",
         "radio_txt6" => "Mas'uliyat",
+
+
+
+        "katolog" => "Katalog",
+
+
+        "serv_pac3" => "Xizmat paketi",
+        "blog_upd" => "Eng so'nggi blog yangilanishlari",
+        
+
+
 ];
 
