@@ -120,8 +120,9 @@ class MainController extends Controller
     public function product()
     {
         $categories = Category::all();
+
         $links = Link::latest()->take(1)->get();
-        $products = Category::withCount('products')->orderBy('created_at', 'desc')->paginate(20);
+        $products = CategoryOfProduct::where('category_id',1)->orderBy('created_at', 'desc')->paginate(20);
         $contacts = Contact::latest()->take(1)->get();
         $numbers = 1;
 

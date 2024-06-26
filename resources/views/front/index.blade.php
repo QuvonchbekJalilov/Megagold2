@@ -3,18 +3,16 @@ $lang = \Illuminate\Support\Facades\App::getLocale();
 ?>
 
 <x-layouts.main>
-
-
-    <section class="banner-section banner-section-five">
+<section class="banner-section banner-section-five">
         <div class="banner-carousel-two owl-carousel owl-theme">
 
          @foreach($homes as $tm)
                 <div class="slide-item">
                     <div class="auto-container">
                         <div class="row">
-                            <div class="content-box col-xl-7 col-lg-8 col-md-12 col-sm-12 order-2 pe-lg-0">
+                            <div class="content-box col-lg-6 col-md-12 col-sm-12 order-2 pe-lg-0">
                                 <h1 class="title animate-2">{{$tm['title_'.$lang]}}</h1>
-                                <div class="text animate-3">  {{$tm['short_content_' .$lang]}}
+                                <div class="text animate-3">  {{Str::limit($tm['short_content_' .$lang], 20, '...')}}
                                 </div>
                                 <div class="btn-box animate-4">
                                     <a href="{{route('contact')}}" class="theme-btn btn-style-two"><i class="icon fa fas fa-plus"></i><span class="btn-title">{{__('words.contact')}}
@@ -23,7 +21,7 @@ $lang = \Illuminate\Support\Facades\App::getLocale();
                                         </span></a>
                                 </div>
                             </div>
-                            <div class="image-column col-xl-5 col-lg-4 col-md-12 col-sm-12 order-lg-2">
+                            <div class="image-column col-lg-6 col-md-12 col-sm-12 order-lg-2">
                                 <div class="image-box">
                                     <figure class="image animate-4 animate-x"><img src="{{asset('storage/' . $tm->first_photo)}}" alt="">
                                     </figure>
@@ -119,7 +117,9 @@ $lang = \Illuminate\Support\Facades\App::getLocale();
                     <div class="bg-image" style="background-image: url(/assets/images/resource/service6-2.jpg);"></div>
                     <div class="inner-container">
                         <div class="sec-title style-three">
-                            <h2>Nima uchun biz?</h2>
+                            <span class="sub-title">{{__('words.serv_pac')}}</span>
+                            <h2>{{__('words.what')}}</h2>
+
                         </div>
                         <div class="about-info">
                             <div class="icon-box">
@@ -127,8 +127,10 @@ $lang = \Illuminate\Support\Facades\App::getLocale();
                                 <i class="icon flaticon-logistics-delivery-6"></i>
                             </div>
                             <div class="content-box">
-                                <h4 class="title">Yuqori sifat:</h4>
-                                <div class="text">Bizning barcha metall mahsulotlarimiz yuqori sifatli va xalqaro standartlarga mos ravishda ishlab chiqarilgan. Har bir mahsulotimiz kuchli, chidamli va uzoq muddat xizmat qiladi.</div>
+                                <h4 class="title">{{__('words.high')}}</h4>
+                                <div class="text">
+                                    {{__('words.high_desc')}}
+                                </div>
                             </div>
                         </div>
                         <div class="about-info">
@@ -137,8 +139,11 @@ $lang = \Illuminate\Support\Facades\App::getLocale();
                                 <i class="icon flaticon-container-2"></i>
                             </div>
                             <div class="content-box">
-                                <h4 class="title">Keng assortiment:</h4>
-                                <div class="text">Bizning katalogimizda turli o'lcham va shakllarda metall mahsulotlar mavjud. Bu sizga loyihangiz uchun eng mos keladigan materiallarni tanlash imkonini beradi.</div>
+                                <h4 class="title">{{__('words.high2')}}</h4>
+                                <div class="text">
+                                    {{__('words.high_desc2')}}
+                                </div>
+
                             </div>
                         </div>
                         <div class="about-info">
@@ -147,8 +152,10 @@ $lang = \Illuminate\Support\Facades\App::getLocale();
                                 <i class="icon flaticon-3d-cube"></i>
                             </div>
                             <div class="content-box">
-                                <h4 class="title">Maxsus buyurtmalar:</h4>
-                                <div class="text">Biz maxsus talablar asosida ishlab chiqarilgan metall mahsulotlarni taklif etamiz. Sizning texnik xususiyatlaringiz va o'lchamlaringiz bo'yicha buyurtmalarni qabul qilamiz.</div>
+                                <h4 class="title">{{__('words.high3')}}</h4>
+                                <div class="text">
+                                    {{__('words.high_desc3')}}
+                                </div>
                             </div>
                         </div>
 
@@ -224,11 +231,10 @@ $lang = \Illuminate\Support\Facades\App::getLocale();
                         <div class="services-block">
                             <div class="inner-block">
                                 <div class="sec-title style-three mb-0">
-                                    <span class="sub-title">Service Package</span>
-                                    <h2>We Provide Full Assistance in Freight & Warehousing</h2>
-                                    <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                        do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                                        minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip eam
+                                    <span class="sub-title">{{__('words.serv_pac2')}}</span>
+                                    <h2>{{__('words.our_customers')}}</h2>
+                                    <div class="text">
+                                        {{__('words.customers_desc')}}
                                     </div>
                                 </div>
 
@@ -236,7 +242,7 @@ $lang = \Illuminate\Support\Facades\App::getLocale();
 
                                     <div class="skill-item">
                                         <div class="skill-header">
-                                            <h6 class="skill-title">ROAD TRANSPORT</h6>
+                                            <h6 class="skill-title">{{__('words.rang_txt1')}}</h6>
                                         </div>
                                         <div class="skill-bar">
                                             <div class="bar-inner">
@@ -251,7 +257,7 @@ $lang = \Illuminate\Support\Facades\App::getLocale();
 
                                     <div class="skill-item">
                                         <div class="skill-header">
-                                            <h6 class="skill-title">AIR TRANSPORT</h6>
+                                            <h6 class="skill-title">{{__('words.rang_txt2')}}</h6>
                                         </div>
                                         <div class="skill-bar">
                                             <div class="bar-inner">
@@ -266,7 +272,7 @@ $lang = \Illuminate\Support\Facades\App::getLocale();
 
                                     <div class="skill-item">
                                         <div class="skill-header">
-                                            <h6 class="skill-title">OCEAN TRANSPORT</h6>
+                                            <h6 class="skill-title">{{__('words.rang_txt3')}}</h6>
                                         </div>
                                         <div class="skill-bar">
                                             <div class="bar-inner">
@@ -281,7 +287,7 @@ $lang = \Illuminate\Support\Facades\App::getLocale();
 
                                     <div class="skill-item">
                                         <div class="skill-header">
-                                            <h6 class="skill-title">TRAIN TRANSPORT</h6>
+                                            <h6 class="skill-title">{{__('words.rang_txt4')}}</h6>
                                         </div>
                                         <div class="skill-bar">
                                             <div class="bar-inner">
@@ -300,25 +306,24 @@ $lang = \Illuminate\Support\Facades\App::getLocale();
                         <div class="services-block mb-0">
                             <div class="inner-block">
                                 <div class="sec-title style-three mb-0">
-                                    <span class="sub-title">Service Package</span>
-                                    <h2>Solving challenges in every industry, every day.</h2>
-                                    <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                        do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                                    <span class="sub-title">{{__('words.serv_pac22')}}</span>
+                                    <h2>{{__('words.our_values')}}</h2>
+                                    <div class="text">{{__('words.our_values_desc')}}</div>
                                 </div>
                                 <div class="row">
                                     <ul class="list-style-two style-two col-sm-6">
-                                        <li>Web & Mobile Responsive</li>
-                                        <li>Web & Mobile Responsive</li>
-                                        <li>Custom Domain Support</li>
+                                        <li>{{__('words.radio_txt1')}}</li>
+                                        <li>{{__('words.radio_txt2')}}</li>
+                                        <li>{{__('words.radio_txt3')}}</li>
                                     </ul>
                                     <ul class="list-style-two style-two col-sm-6">
-                                        <li>Web & Mobile Responsive</li>
-                                        <li>Web & Mobile Responsive</li>
-                                        <li>Custom Domain Support</li>
+                                        <li>{{__('words.radio_txt4')}}</li>
+                                        <li>{{__('words.radio_txt5')}}</li>
+                                        <li>{{__('words.radio_txt6')}}</li>
                                     </ul>
                                 </div>
-                                <a href="page-contact.html" class="theme-btn btn-style-two"><i class="icon fa fas fa-plus"></i><span class="btn-title">Request A
-                                        Quote</span></a>
+                                <a href="{{'contact'}}" class="theme-btn btn-style-two"><i class="icon fa fas fa-plus"></i><span class="btn-title">{{__('words.contact')}}
+                                        </span></a>
                             </div>
                         </div>
                     </div>
@@ -362,140 +367,6 @@ $lang = \Illuminate\Support\Facades\App::getLocale();
     </section>
 
 
-    <section class="project-section-five">
-        <div class="outer-box">
-            <div class="auto-container">
-                <div class="sec-title style-three light">
-                    <span class="sub-title">Project We Done</span>
-                    <h2>Let’s View Our Latest Projects</h2>
-                </div>
-                <div class="carousel-outer">
-
-                    <div class="swiper project-three-slider">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-
-                                <div class="project-block-five">
-                                    <div class="inner-box">
-                                        <div class="image-box">
-                                            <figure class="image mb-0"><a href="page-project-details.html"><img src="/assets/images/resource/project-5.jpg" alt=""></a></figure>
-                                        </div>
-                                        <div class="content-box">
-                                            <h4 class="title"><a href="page-project-details.html">Exclusive Cargo
-                                                    Shipping</a></h4>
-                                            <div class="text">Lorem ipsum dolor samet consectetur adipiscing elit,
-                                                nec dapibus tristique egestas felis justo, nunc eros cubilia cras
-                                                facilisi curabitur posuere massa varius.</div>
-                                            <a href="page-project-details.html" class="theme-btn btn-style-two"><i class="icon fa fas fa-plus"></i><span class="btn-title">View
-                                                    Details</span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-
-                                <div class="project-block-five">
-                                    <div class="inner-box">
-                                        <div class="image-box">
-                                            <figure class="image mb-0"><a href="page-project-details.html"><img src="/assets/images/resource/project-5.jpg" alt=""></a></figure>
-                                        </div>
-                                        <div class="content-box">
-                                            <h4 class="title"><a href="page-project-details.html">Exclusive Cargo
-                                                    Shipping</a></h4>
-                                            <div class="text">Lorem ipsum dolor samet consectetur adipiscing elit,
-                                                nec dapibus tristique egestas felis justo, nunc eros cubilia cras
-                                                facilisi curabitur posuere massa varius.</div>
-                                            <a href="page-project-details.html" class="theme-btn btn-style-two"><i class="icon fa fas fa-plus"></i><span class="btn-title">View
-                                                    Details</span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-
-                                <div class="project-block-five">
-                                    <div class="inner-box">
-                                        <div class="image-box">
-                                            <figure class="image mb-0"><a href="page-project-details.html"><img src="/assets/images/resource/project-5.jpg" alt=""></a></figure>
-                                        </div>
-                                        <div class="content-box">
-                                            <h4 class="title"><a href="page-project-details.html">Exclusive Cargo
-                                                    Shipping</a></h4>
-                                            <div class="text">Lorem ipsum dolor samet consectetur adipiscing elit,
-                                                nec dapibus tristique egestas felis justo, nunc eros cubilia cras
-                                                facilisi curabitur posuere massa varius.</div>
-                                            <a href="page-project-details.html" class="theme-btn btn-style-two"><i class="icon fa fas fa-plus"></i><span class="btn-title">View
-                                                    Details</span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-
-                                <div class="project-block-five">
-                                    <div class="inner-box">
-                                        <div class="image-box">
-                                            <figure class="image mb-0"><a href="page-project-details.html"><img src="/assets/images/resource/project-5.jpg" alt=""></a></figure>
-                                        </div>
-                                        <div class="content-box">
-                                            <h4 class="title"><a href="page-project-details.html">Exclusive Cargo
-                                                    Shipping</a></h4>
-                                            <div class="text">Lorem ipsum dolor samet consectetur adipiscing elit,
-                                                nec dapibus tristique egestas felis justo, nunc eros cubilia cras
-                                                facilisi curabitur posuere massa varius.</div>
-                                            <a href="page-project-details.html" class="theme-btn btn-style-two"><i class="icon fa fas fa-plus"></i><span class="btn-title">View
-                                                    Details</span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-
-                                <div class="project-block-five">
-                                    <div class="inner-box">
-                                        <div class="image-box">
-                                            <figure class="image mb-0"><a href="page-project-details.html"><img src="/assets/images/resource/project-5.jpg" alt=""></a></figure>
-                                        </div>
-                                        <div class="content-box">
-                                            <h4 class="title"><a href="page-project-details.html">Exclusive Cargo
-                                                    Shipping</a></h4>
-                                            <div class="text">Lorem ipsum dolor samet consectetur adipiscing elit,
-                                                nec dapibus tristique egestas felis justo, nunc eros cubilia cras
-                                                facilisi curabitur posuere massa varius.</div>
-                                            <a href="page-project-details.html" class="theme-btn btn-style-two"><i class="icon fa fas fa-plus"></i><span class="btn-title">View
-                                                    Details</span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-
-                                <div class="project-block-five">
-                                    <div class="inner-box">
-                                        <div class="image-box">
-                                            <figure class="image mb-0"><a href="page-project-details.html"><img src="/assets/images/resource/project-5.jpg" alt=""></a></figure>
-                                        </div>
-                                        <div class="content-box">
-                                            <h4 class="title"><a href="page-project-details.html">Exclusive Cargo
-                                                    Shipping</a></h4>
-                                            <div class="text">Lorem ipsum dolor samet consectetur adipiscing elit,
-                                                nec dapibus tristique egestas felis justo, nunc eros cubilia cras
-                                                facilisi curabitur posuere massa varius.</div>
-                                            <a href="page-project-details.html" class="theme-btn btn-style-two"><i class="icon fa fas fa-plus"></i><span class="btn-title">View
-                                                    Details</span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-                </div>
-            </div>
-        </div>
-    </section>
 
 
     <div class="video-section-two">
@@ -504,33 +375,32 @@ $lang = \Illuminate\Support\Facades\App::getLocale();
         </div>
         <div class="auto-container">
             <div class="row align-items-end">
-                <div class="content-column col-xl-5 order-2">
+                <div class="content-column col-xl-5 order-2 ">
                     <div class="sec-title style-three">
-                        <span class="sub-title">Service Package</span>
-                        <h2>Why You Should <br>Choose Us?</h2>
-                        <div class="text">There are many variations of passages of Lorem <br>Ipsum available, but
-                            the majority have suffered <br>alteration in some form.</div>
+
+                        <h2>{{__('words.about_us')}}</h2>
+                        <div class="text">{{__('words.about_us2')}}</div>
                     </div>
                     <ul class="list-style-two">
-                        <li>Emergency mechanical business solutions</li>
-                        <li>Top quality services with reasonable price</li>
-                        <li>Reliable & experienced contractors</li>
+                        <li>{{__('words.radio_txt4')}}</li>
+                        <li>{{__('words.radio_txt5')}}</li>
+                        <li>{{__('words.radio_txt3')}}</li>
                     </ul>
                 </div>
                 <div class="image-column col-xl-7 order-xl-2">
                     <div class="inner-column">
-                        <figure class="image mb-0"><img src="/assets/images/background/7.jpg" alt="Image"></figure>
+                        <figure class="image mb-0"><img src="/assets/images/background/10.jpg" alt="Image" width="80%"></figure>
                         <div class="video-box">
                             <div class="btn-box">
-                                <a href="https://www.youtube.com/watch?v=Fvae8nxzVz4" class="play-now lightbox-image" data-fancybox="gallery" data-caption="">
+                                <a href="https://www.youtube.com/watch?v=buWkiNvk6Oo" class="play-now lightbox-image" data-fancybox="gallery" data-caption="">
                                     <i class="icon fa fa-play" aria-hidden="true"></i>
                                 </a>
                             </div>
                         </div>
                         <div class="experience">
-                            <div class="inner">
+                            <div class="inner" style="width:260px">
                                 <i class="icon flaticon-team"></i>
-                                <h5 title="title">Dedicated <br>Customer <br>Teams</h5>
+                                <h5  title="title" >{{__('words.product_text')}}</h5>
                             </div>
                         </div>
                     </div>
@@ -543,8 +413,8 @@ $lang = \Illuminate\Support\Facades\App::getLocale();
     <section class="news-section-four">
         <div class="auto-container">
             <div class="sec-title style-three text-center wow fadeInUp">
-                <span class="sub-title">Service Package</span>
-                <h2>Latest Blog Updates</h2>
+                <span class="sub-title">{{__('words.serv_pac3')}}</span>
+                <h2>{{__('words.blog_upd')}}</h2>
             </div>
             <div class="row">
                 @foreach ($blogs as $blog)
@@ -581,10 +451,9 @@ $lang = \Illuminate\Support\Facades\App::getLocale();
                 <div class="bg-image" style="background-image: url(/assets/images/background/4.jpg);"></div>
                 <div class="inner-box">
                     <div class="sec-title style-three light mb-0">
-                        <h2>Let us work together to make a difference</h2>
-                        <div class="text">Vehicula sed habitasse phasellus fames suscipit ulputate venenatis </div>
+                        <h2>{{__('words.contact_1')}}</h2>
                     </div>
-                    <a href="page-contact.html" class="theme-btn btn-style-two hvr-light"><i class="icon fa fas fa-plus"></i><span class="btn-title">Request A Quote</span></a>
+                    <a href="{{'contact'}}" class="theme-btn btn-style-two hvr-light"><i class="icon fa fas fa-plus"></i><span class="btn-title">{{__('words.contact')}}</span></a>
                 </div>
             </div>
         </div>

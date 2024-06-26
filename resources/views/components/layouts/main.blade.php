@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>Mega Metal Gold</title>
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="/assets/plugins/revolution/css/settings.css" rel="stylesheet" type="text/css">
     <link href="/assets/plugins/revolution/css/layers.css" rel="stylesheet" type="text/css">
@@ -41,6 +41,9 @@
     <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
     <script src="/assets/js/jquery.js"></script>
     <script src="/assets/js/popper.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 
     <script src="/assets/plugins/revolution/js/jquery.themepunch.revolution.min.js"></script>
     <script src="/assets/plugins/revolution/js/jquery.themepunch.tools.min.js"></script>
