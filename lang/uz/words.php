@@ -1,10 +1,12 @@
 <?php
 
-return [
+return
+    [
+        'our_team' => 'Jamoamiz a`zolari bilan tanishing',
         'home' => 'Asosiy',
         'about' => 'Biz haqimizda',
-        'megagold'=>'Mega Metal Gold',
-        'megagold_about'=>'Bizning kompaniyamiz metall mahsulotlarini yetkazib berish bo`yicha yetakchi hisoblanadi. Biz yuqori sifatli metall mahsulotlarni taqdim etish orqali mijozlarimizning ishonchini qozonib kelmoqdamiz. Kompaniyamiz ko`p yillik tajribaga ega bo`lib, qurilish, muhandislik, ishlab chiqarish va boshqa ko`plab sohalarda mijozlarimizga xizmat ko`rsatamiz.',
+         'megagold'=>'Mega Metal Gold',
+         'megagold_about'=>'Bizning kompaniyamiz metall mahsulotlarini yetkazib berish bo`yicha yetakchi hisoblanadi. Biz yuqori sifatli metall mahsulotlarni taqdim etish orqali mijozlarimizning ishonchini qozonib kelmoqdamiz. Kompaniyamiz ko`p yillik tajribaga ega bo`lib, qurilish, muhandislik, ishlab chiqarish va boshqa ko`plab sohalarda mijozlarimizga xizmat ko`rsatamiz.',
         'product' => 'Mahsulotlar',
         'category' => 'Kategoriya',
         'contact' => "Bog'lanish",
@@ -47,18 +49,18 @@ return [
         'name' => "Ismingizni kiritng",
         'buy' => 'Sotib Olish',
         'fullName' => 'To\'liq ism',
-        'weight' => 'Vazn',
-        'lenght' => 'Uzunlik',
-        'submit' => "Yuborish",
-        'perTonna' => '1 tonna narx',
-        'placeholderName' => 'ismingizni kiriting',
-        'placeholderWeight' => 'Armatura vaznini kiriting',
-        'placeholderLenght' => 'Armatura uzunligini kiriting',
-        'language' => 'Tilni tanlang',
+'weight' => 'Vazn',
+'lenght' => 'Uzunlik',
+'submit' => "Yuborish",
+'perTonna' => '1 tonna narx',
+'placeholderName' => 'ismingizni kiriting',
+'placeholderWeight' => 'Armatura vaznini kiriting',
+'placeholderLenght' => 'Armatura uzunligini kiriting',
+'language' => 'Tilni tanlang',
 
-        'footerAbout' => "Biz bilan mustahkam va barqaror kelajak sari birgalikda qadam tashlang.",
+'footerAbout' => "Biz bilan mustahkam va barqaror kelajak sari birgalikda qadam tashlang.",
 
-        'message' => 'Habar',
+'message' => 'Habar',
 
         "serv_pac" => "Xizmat paketi",
         "what" => "Nima uchun biz?",
@@ -95,3 +97,4 @@ return [
         "radio_txt5" => "Jamoaviy ish",
         "radio_txt6" => "Mas'uliyat",
 ];
+

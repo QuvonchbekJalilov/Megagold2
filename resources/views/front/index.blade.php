@@ -8,32 +8,31 @@ $lang = \Illuminate\Support\Facades\App::getLocale();
     <section class="banner-section banner-section-five">
         <div class="banner-carousel-two owl-carousel owl-theme">
 
-            <div class="slide-item">
-                <div class="bg-image" style="background-image: url(/assets/images/main-slider/6-dark.jpg);"></div>
-                <div class="auto-container">
-                    <div class="row">
-                        <div class="content-box col-xl-7 col-lg-8 col-md-12 col-sm-12 order-2 pe-lg-0">
-                            <h1 class="title animate-2">Flexibile, Improved <br class="d-none d-xxl-block">Service
-                                Levels & Expedite <br class="d-none d-xxl-block">Delivery!</h1>
-                            <div class="text animate-3">We understand the importance of timely delivery. Our
-                                logistics experts <br>and advanced tracking systems ensure that your freight...
-                            </div>
-                            <div class="btn-box animate-4">
-                                <a href="{{route('contact')}}" class="theme-btn btn-style-two"><i class="icon fa fas fa-plus"></i><span class="btn-title">{{__('words.contact')}}
+         @foreach($homes as $tm)
+                <div class="slide-item">
+                    <div class="auto-container">
+                        <div class="row">
+                            <div class="content-box col-xl-7 col-lg-8 col-md-12 col-sm-12 order-2 pe-lg-0">
+                                <h1 class="title animate-2">{{$tm['title_'.$lang]}}</h1>
+                                <div class="text animate-3">  {{$tm['short_content_' .$lang]}}
+                                </div>
+                                <div class="btn-box animate-4">
+                                    <a href="{{route('contact')}}" class="theme-btn btn-style-two"><i class="icon fa fas fa-plus"></i><span class="btn-title">{{__('words.contact')}}
                                     </span></a>
-                                <a href="{{route('category')}}" class="theme-btn btn-style-two"><i class="icon fa fas fa-plus"></i><span class="btn-title">{{__('words.category')}}
+                                    <a href="{{route('category')}}" class="theme-btn btn-style-two"><i class="icon fa fas fa-plus"></i><span class="btn-title">{{__('words.category')}}
                                         </span></a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="image-column col-xl-5 col-lg-4 col-md-12 col-sm-12 order-lg-2">
-                            <div class="image-box">
-                                <figure class="image animate-4 animate-x"><img src="/assets/images/main-slider/7.png" alt="">
-                                </figure>
+                            <div class="image-column col-xl-5 col-lg-4 col-md-12 col-sm-12 order-lg-2">
+                                <div class="image-box">
+                                    <figure class="image animate-4 animate-x"><img src="{{asset('storage/' . $tm->first_photo)}}" alt="">
+                                    </figure>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+         @endforeach
 
         </div>
     </section>
@@ -43,108 +42,26 @@ $lang = \Illuminate\Support\Facades\App::getLocale();
         <div class="carousel-outer">
             <div class="swiper services-six-slider">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide">
+                 @foreach($banners as $tm )
+                        <div class="swiper-slide">
 
-                        <div class="services-block-six">
-                            <div class="inner-box">
-                                <div class="image-box">
-                                    <figure class="image mb-0"><a href="page-service-details.html"><img src="/assets/images/resource/service5-1.jpg" alt=""></a></figure>
-                                </div>
-                                <div class="content-box">
-                                    <div class="inner-box">
-                                        <h3 class="title"><a href="page-service-details.html">Transport Solution</a>
-                                        </h3>
-                                        <div class="number">01</div>
+                            <div class="services-block-six">
+                                <div class="inner-box">
+                                    <div class="image-box">
+                                        <figure class="image mb-0"><a href="page-service-details.html"><img src="{{asset('storage/' . $tm->photo)}}" alt=""></a></figure>
+                                    </div>
+                                    <div class="content-box">
+                                        <div class="inner-box">
+                                            <h3 class="title"><a href="page-service-details.html">{{$tm['title_'.$lang]}}</a>
+                                            </h3>
+                                            <div class="number">0{{ $loop->iteration }}</div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="swiper-slide">
+                 @endforeach
 
-                        <div class="services-block-six">
-                            <div class="inner-box">
-                                <div class="image-box">
-                                    <figure class="image mb-0"><a href="page-service-details.html"><img src="/assets/images/resource/service5-1.jpg" alt=""></a></figure>
-                                </div>
-                                <div class="content-box">
-                                    <div class="inner-box">
-                                        <h3 class="title"><a href="page-service-details.html">Warehousign
-                                                Solution</a></h3>
-                                        <div class="number">02</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-
-                        <div class="services-block-six">
-                            <div class="inner-box">
-                                <div class="image-box">
-                                    <figure class="image mb-0"><a href="page-service-details.html"><img src="/assets/images/resource/service5-1.jpg" alt=""></a></figure>
-                                </div>
-                                <div class="content-box">
-                                    <div class="inner-box">
-                                        <h3 class="title"><a href="page-service-details.html">Supply Chain
-                                                Management</a></h3>
-                                        <div class="number">03</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-
-                        <div class="services-block-six">
-                            <div class="inner-box">
-                                <div class="image-box">
-                                    <figure class="image mb-0"><a href="page-service-details.html"><img src="/assets/images/resource/service5-1.jpg" alt=""></a></figure>
-                                </div>
-                                <div class="content-box">
-                                    <div class="inner-box">
-                                        <h3 class="title"><a href="page-service-details.html">Transport Solution</a>
-                                        </h3>
-                                        <div class="number">01</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-
-                        <div class="services-block-six">
-                            <div class="inner-box">
-                                <div class="image-box">
-                                    <figure class="image mb-0"><a href="page-service-details.html"><img src="/assets/images/resource/service5-1.jpg" alt=""></a></figure>
-                                </div>
-                                <div class="content-box">
-                                    <div class="inner-box">
-                                        <h3 class="title"><a href="page-service-details.html">Warehousign
-                                                Solution</a></h3>
-                                        <div class="number">02</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-
-                        <div class="services-block-six">
-                            <div class="inner-box">
-                                <div class="image-box">
-                                    <figure class="image mb-0"><a href="page-service-details.html"><img src="/assets/images/resource/service5-1.jpg" alt=""></a></figure>
-                                </div>
-                                <div class="content-box">
-                                    <div class="inner-box">
-                                        <h3 class="title"><a href="page-service-details.html">Supply Chain
-                                                Management</a></h3>
-                                        <div class="number">03</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -168,19 +85,19 @@ $lang = \Illuminate\Support\Facades\App::getLocale();
                 <div class="services-column col-xl-4 offset-xl-1">
                     <div class="inner-column">
                         <ul class="services-box">
-                            <li><a href="index.html"><i class="icon fa fa-arrow-right"></i>Transparent Pricing</a>
+                            <li><a href=""><i class="icon fa fa-arrow-right"></i>Transparent Pricing</a>
                             </li>
-                            <li><a href="index.html"><i class="icon fa fa-arrow-right"></i>Real-Time Tracking</a>
+                            <li><a href=""><i class="icon fa fa-arrow-right"></i>Real-Time Tracking</a>
                             </li>
-                            <li><a href="index.html"><i class="icon fa fa-arrow-right"></i>Warehouse Storage</a>
+                            <li><a href=""><i class="icon fa fa-arrow-right"></i>Warehouse Storage</a>
                             </li>
-                            <li><a href="index.html"><i class="icon fa fa-arrow-right"></i>Security For Cargo</a>
+                            <li><a href=""><i class="icon fa fa-arrow-right"></i>Security For Cargo</a>
                             </li>
-                            <li><a href="index.html"><i class="icon fa fa-arrow-right"></i>Easy Payment Methods</a>
+                            <li><a href=""><i class="icon fa fa-arrow-right"></i>Easy Payment Methods</a>
                             </li>
-                            <li><a href="index.html"><i class="icon fa fa-arrow-right"></i>24/7 Hours Support</a>
+                            <li><a href=""><i class="icon fa fa-arrow-right"></i>24/7 Hours Support</a>
                             </li>
-                            <li><a href="index.html"><i class="icon fa fa-arrow-right"></i>Fast & Efficient
+                            <li><a href=""><i class="icon fa fa-arrow-right"></i>Fast & Efficient
                                     Delivery</a></li>
                         </ul>
                     </div>
@@ -204,6 +121,8 @@ $lang = \Illuminate\Support\Facades\App::getLocale();
                         <div class="sec-title style-three">
                             <span class="sub-title">{{__('words.serv_pac')}}</span>
                             <h2>{{__('words.what')}}</h2>
+                            <h2>Nima uchun biz?</h2>
+
                         </div>
                         <div class="about-info">
                             <div class="icon-box">
@@ -215,6 +134,8 @@ $lang = \Illuminate\Support\Facades\App::getLocale();
                                 <div class="text">
                                     {{__('words.high_desc')}}
                                 </div>
+                                <h4 class="title">Yuqori sifat:</h4>
+                                <div class="text">Bizning barcha metall mahsulotlarimiz yuqori sifatli va xalqaro standartlarga mos ravishda ishlab chiqarilgan. Har bir mahsulotimiz kuchli, chidamli va uzoq muddat xizmat qiladi.</div>
                             </div>
                         </div>
                         <div class="about-info">
@@ -227,6 +148,9 @@ $lang = \Illuminate\Support\Facades\App::getLocale();
                                 <div class="text">
                                     {{__('words.high_desc2')}}
                                 </div>
+
+                                <h4 class="title">Keng assortiment:</h4>
+                                <div class="text">Bizning katalogimizda turli o'lcham va shakllarda metall mahsulotlar mavjud. Bu sizga loyihangiz uchun eng mos keladigan materiallarni tanlash imkonini beradi.</div>
                             </div>
                         </div>
                         <div class="about-info">
@@ -239,150 +163,54 @@ $lang = \Illuminate\Support\Facades\App::getLocale();
                                 <div class="text">
                                     {{__('words.high_desc3')}}
                                 </div>
+                                <h4 class="title">Maxsus buyurtmalar:</h4>
+                                <div class="text">Biz maxsus talablar asosida ishlab chiqarilgan metall mahsulotlarni taklif etamiz. Sizning texnik xususiyatlaringiz va o'lchamlaringiz bo'yicha buyurtmalarni qabul qilamiz.</div>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
+    <style>
+        .aaa img{
+            border-radius: 50%;
+        }
+    </style>
 
     <section class="team-section-four">
         <div class="auto-container">
             <div class="sec-title style-three">
-                <span class="sub-title">Our Team Members</span>
-                <h2>Meet Our Team Members</h2>
+                <h2>{{__('words.our_team')}}</h2>
             </div>
             <div class="carousel-outer">
                 <div class="swiper team-three-slider">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide">
+                        @foreach($teams  as $tm)
+                            <div class="swiper-slide">
+                                <div class="team-block-four">
+                                    <div class="inner-box">
+                                        <div class="image-box aaa">
+                                            <figure class="image"><a href="page-team-details.html"><img src="{{asset('storage/'. $tm->photo)}}" alt="" ></a></figure>
+                                        </div>
+                                        <div class="info-box">
+                                            <span class="designation">{{$tm['title_'.$lang]}}</span>
+                                            <h4 class="name"><a href="page-team-details.html">{{$tm->name}}</a></h4>
+                                            <ul class="social-icon">
+                                                <li><a href="{{$tm->twitter}}"><i class="fab fa-telegram"></i></a></li>
+                                                <li><a href="{{$tm->facebook}}"><i class="fab fa-facebook"></i></a></li>
+                                                <li><a href="{{$tm->twitter}}"><i class="fab fa-twitter"></i></a></li>
 
-                            <div class="team-block-four">
-                                <div class="inner-box">
-                                    <div class="image-box">
-                                        <figure class="image"><a href="page-team-details.html"><img src="/assets/images/resource/team3-1.png" alt=""></a></figure>
-                                    </div>
-                                    <div class="info-box">
-                                        <span class="designation">Manager</span>
-                                        <h4 class="name"><a href="page-team-details.html">George Edward</a></h4>
-                                        <ul class="social-icon">
-                                            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-skype"></i></a></li>
-                                            <li><a href="#"><img src="/assets/images/icons/icon-6.png" alt="index.html"></a>
-                                            </li>
-                                        </ul>
+                                                <li><a href="#"><img src="/assets/images/icons/icon-6.png" alt="index.html"></a>
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="swiper-slide">
+                        @endforeach
 
-                            <div class="team-block-four">
-                                <div class="inner-box">
-                                    <div class="image-box">
-                                        <figure class="image"><a href="page-team-details.html"><img src="/assets/images/resource/team3-2.png" alt=""></a></figure>
-                                    </div>
-                                    <div class="info-box">
-                                        <span class="designation">Manager</span>
-                                        <h4 class="name"><a href="page-team-details.html">Mia Martinez</a></h4>
-                                        <ul class="social-icon">
-                                            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-skype"></i></a></li>
-                                            <li><a href="#"><img src="/assets/images/icons/icon-6.png" alt="index.html"></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-
-                            <div class="team-block-four">
-                                <div class="inner-box">
-                                    <div class="image-box">
-                                        <figure class="image"><a href="page-team-details.html"><img src="/assets/images/resource/team3-3.png" alt=""></a></figure>
-                                    </div>
-                                    <div class="info-box">
-                                        <span class="designation">Manager</span>
-                                        <h4 class="name"><a href="page-team-details.html">Michael Clark</a></h4>
-                                        <ul class="social-icon">
-                                            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-skype"></i></a></li>
-                                            <li><a href="#"><img src="/assets/images/icons/icon-6.png" alt="index.html"></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-
-                            <div class="team-block-four">
-                                <div class="inner-box">
-                                    <div class="image-box">
-                                        <figure class="image"><a href="page-team-details.html"><img src="/assets/images/resource/team3-1.png" alt=""></a></figure>
-                                    </div>
-                                    <div class="info-box">
-                                        <span class="designation">Manager</span>
-                                        <h4 class="name"><a href="page-team-details.html">George Edward</a></h4>
-                                        <ul class="social-icon">
-                                            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-skype"></i></a></li>
-                                            <li><a href="#"><img src="/assets/images/icons/icon-6.png" alt="index.html"></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-
-                            <div class="team-block-four">
-                                <div class="inner-box">
-                                    <div class="image-box">
-                                        <figure class="image"><a href="page-team-details.html"><img src="/assets/images/resource/team3-2.png" alt=""></a></figure>
-                                    </div>
-                                    <div class="info-box">
-                                        <span class="designation">Manager</span>
-                                        <h4 class="name"><a href="page-team-details.html">Mia Martinez</a></h4>
-                                        <ul class="social-icon">
-                                            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-skype"></i></a></li>
-                                            <li><a href="#"><img src="/assets/images/icons/icon-6.png" alt="index.html"></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-
-                            <div class="team-block-four">
-                                <div class="inner-box">
-                                    <div class="image-box">
-                                        <figure class="image"><a href="page-team-details.html"><img src="/assets/images/resource/team3-3.png" alt=""></a></figure>
-                                    </div>
-                                    <div class="info-box">
-                                        <span class="designation">Manager</span>
-                                        <h4 class="name"><a href="page-team-details.html">Michael Clark</a></h4>
-                                        <ul class="social-icon">
-                                            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-skype"></i></a></li>
-                                            <li><a href="#"><img src="/assets/images/icons/icon-6.png" alt="index.html"></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
 

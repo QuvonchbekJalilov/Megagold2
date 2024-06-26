@@ -51,8 +51,8 @@
                             </div>
                         </div>
                     </div>
-                    <a href="page-contact.html" class="theme-btn btn-style-two"><i
-                            class="icon fa fas fa-plus"></i><span class="btn-title">Contact Us</span></a>
+                    <a href="{{'contact'}}" class="theme-btn btn-style-two"><i
+                            class="icon fa fas fa-plus"></i><span class="btn-title">{{__('words.contact')}}</span></a>
 
                     <div class="mobile-nav-toggler"><span class="icon lnr-icon-bars"></span></div>
                 </div>
