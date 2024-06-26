@@ -3,18 +3,16 @@ $lang = \Illuminate\Support\Facades\App::getLocale();
 ?>
 
 <x-layouts.main>
-
-
-    <section class="banner-section banner-section-five">
+<section class="banner-section banner-section-five">
         <div class="banner-carousel-two owl-carousel owl-theme">
 
          @foreach($homes as $tm)
                 <div class="slide-item">
                     <div class="auto-container">
                         <div class="row">
-                            <div class="content-box col-xl-7 col-lg-8 col-md-12 col-sm-12 order-2 pe-lg-0">
+                            <div class="content-box col-lg-6 col-md-12 col-sm-12 order-2 pe-lg-0">
                                 <h1 class="title animate-2">{{$tm['title_'.$lang]}}</h1>
-                                <div class="text animate-3">  {{$tm['short_content_' .$lang]}}
+                                <div class="text animate-3">  {{Str::limit($tm['short_content_' .$lang], 20, '...')}}
                                 </div>
                                 <div class="btn-box animate-4">
                                     <a href="{{route('contact')}}" class="theme-btn btn-style-two"><i class="icon fa fas fa-plus"></i><span class="btn-title">{{__('words.contact')}}
@@ -23,7 +21,7 @@ $lang = \Illuminate\Support\Facades\App::getLocale();
                                         </span></a>
                                 </div>
                             </div>
-                            <div class="image-column col-xl-5 col-lg-4 col-md-12 col-sm-12 order-lg-2">
+                            <div class="image-column col-lg-6 col-md-12 col-sm-12 order-lg-2">
                                 <div class="image-box">
                                     <figure class="image animate-4 animate-x"><img src="{{asset('storage/' . $tm->first_photo)}}" alt="">
                                     </figure>
@@ -380,8 +378,8 @@ $lang = \Illuminate\Support\Facades\App::getLocale();
         <div class="outer-box">
             <div class="auto-container">
                 <div class="sec-title style-three light">
-                    <span class="sub-title">Project We Done</span>
-                    <h2>Let’s View Our Latest Projects</h2>
+                    <!-- <span class="sub-title">Project We Done</span> -->
+                    <h2>{{__('words.katolog')}}</h2>
                 </div>
                 <div class="carousel-outer">
 
@@ -557,8 +555,8 @@ $lang = \Illuminate\Support\Facades\App::getLocale();
     <section class="news-section-four">
         <div class="auto-container">
             <div class="sec-title style-three text-center wow fadeInUp">
-                <span class="sub-title">Service Package</span>
-                <h2>Latest Blog Updates</h2>
+                <span class="sub-title">{{__('words.serv_pac3')}}</span>
+                <h2>{{__('words.blog_upd')}}</h2>
             </div>
             <div class="row">
                 @foreach ($blogs as $blog)

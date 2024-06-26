@@ -95,4 +95,13 @@ return
         "radio_txt4" => "Innovation",
         "radio_txt5" => "Team work",
         "radio_txt6" => "Responsibility",
+
+
+        "katolog" => "Catalog",
+
+
+        "serv_pac3" => "Service package",
+        "blog_upd" => "Latest blog updates"
+        
+
 ];
