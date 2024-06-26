@@ -22,47 +22,6 @@ $lang = \Illuminate\Support\Facades\App::getLocale();
     .price_content h4, p {
         color: white;
     }
-    .single_price {
-        background-color: #2d2b3e !important;
-        border-radius: 7px;
-        margin-bottom: 50px;
-        height: 250px;
-    }
-
-    .price_img {
-        position: relative;
-    }
-
-    .price {
-        position: absolute;
-        top: 40%;
-        right: 0;
-    }
-
-    .price_content h4, p {
-        color: white;
-    }
-
-    @media (max-width: 767px) {
-        .single_price {
-            background-color: #2d2b3e !important;
-            border-radius: 7px;
-            margin-bottom: 50px;
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            gap: 50px;
-            align-items: center;
-            text-align: center;
-            height: auto !important;
-            padding-bottom: 25px;
-        }
-
-        .all-fl{
-            display: flex;
-            flex-direction: column;
-        }
-    }
 </style>
 
 <x-layouts.main2>
@@ -79,76 +38,66 @@ $lang = \Illuminate\Support\Facades\App::getLocale();
     </section>
 
     <div class="container my-3">
-        <div class="all-fl" style="display: flex; gap: 10px; justify-content: space-between;">
-
-
-            <div class="col-md-3">
-                <div class="shop-sidebar w-100">
-                    <div class="sidebar-widget category-widget" style="background-color: #2d2b3e !important;">
-                        <div class="widget-title">
-                            <h5 class="widget-title" style="color: white;">Categories</h5>
-                        </div>
-                        <div class="widget-content">
-                            <ul class="category-list clearfix">
-                                @foreach($products as $tm)
-                                    <li><a href="{{route('products',$tm->id)}}" style="color: white;">{{$tm['name_'. $lang]}}</a>
-                                    </li>
-                                @endforeach
-
-                            </ul>
+        <div style="display: flex; gap: 10px; justify-content: space-between;">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="shop-sidebar w-100">
+                        <div class="sidebar-widget category-widget" style="background-color: #2d2b3e !important;">
+                            <div class="widget-title">
+                                <h5 class="widget-title" style="color: white;">{{ __('words.category') }}</h5>
+                            </div>
+                            <div class="widget-content">
+                                <ul class="category-list clearfix">
+                                    @foreach($categories as $tm)
+                                        <li><a href="{{ route('products', $tm->id) }}" style="color: white;">{{ $tm['name_'. $lang] }}</a></li>
+                                    @endforeach
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div>
-                @foreach ($products as $product)
-                    <div class="single_price d-flex align-items-center justify-content-flex-end gap-5 wow animate__fadeIn shadow px-3  "
-                         data-animation="fadeInUp" data-delay="3s" data-wow-duration="3s"
-                         style="visibility: visible; animation-duration: 3s; animation-name: fadeIn;">
-                        <div class="price_img">
-                            <img src="https://megagold.uz/storage/post_photo/palichka%20(2)%201.png"
-                                 style="height: 200px;"
-                                 alt="">
-                            <div class="price">
-                                <p class="category border rounded px-2 py-1 text-20 text-white"
-                                   style="font-size: 20px; background-color: #2d2b3e;">Квадрат 20</p>
-                            </div>
-                        </div>
-                        <div class="price_content">
-                            <h4>10.5 mln</h4>
-                            <div>
-                                <div class="mt-2 justify-content-between d-flex">
-                                    <div class="row justify-content-between">
-                                        <div class="col-md-6 ">
-                                            <p class="aaa border rounded px-2 text-white">Size: СТ3СП</p>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <p class="aaa border rounded px-2 text-white">Metr - Tonna: 3.145</p>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <p class="aaa border rounded px-2 text-white">Tonna - Metr: 318</p>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <p class="aaa border rounded px-2 text-white">Manufacturer: Uzbekistan</p>
+
+                <div class="row col-md-9">
+                    @foreach ($products as $product)
+                        <div class="col-md-12">
+                            <div class="single_price d-flex align-items-center justify-content-between gap-5 shadow px-3 wow animate__fadeIn" data-animation="fadeInUp" data-delay="3s" style="visibility: visible; animation-duration: 3s; animation-name: fadeIn;">
+                                <div class="price_img">
+                                    <img src="/storage/{{ $product->category->photo }}" style="height: 200px;" alt="">
+                                    <div class="price">
+                                        <p class="category border rounded px-2 py-1 text-20 text-white" style="font-size: 20px; background-color: #2d2b3e;">{{ $product['name_'.$lang] }}</p>
+                                    </div>
+                                </div>
+                                <div class="price_content">
+                                    <h4>{{ $product->price / 1000000 }} mln</h4>
+                                    <div class="mt-2">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <p class="border rounded px-2 text-white">{{ __('words.size') }}: {{ $product->size }}</p>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p class="border rounded px-2 text-white">{{ __('words.metr_tonna') }}: {{ $product->metr_tonna }}</p>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p class="border rounded px-2 text-white">{{ __('words.tonna_metr') }}: {{ $product->tonna_metr }}</p>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p class="border rounded px-2 text-white">{{ __('words.manufacturer') }}: {{ $product->manufacturer }}</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
+                                <div class="choose_plan">
+                                    <button class="cmn_btn increase_width cmn_outline effect px-5 py-2 rounded" onclick="xarid({{ $product->id }})" type="button" data-bs-toggle="modal" data-bs-target="#purchaseModal">
+                                        <span>{{ __('words.buy') }}</span>
+                                    </button>
+                                </div>
                             </div>
                         </div>
-                        <div class="choose_plan">
-                            <button class="cmn_btn increase_width cmn_outline effect px-5 py-2 rounded"
-                                    onclick='xarid({{ $product->id }})'
-                                    type="button" data-bs-toggle="modal" data-bs-target="#purchaseModal">
-                                <span>  <span>{{('words.buy')}}</span></span>
-                            </button>
-                        </div>
-                    </div>
-                @endforeach
-
+                    @endforeach
+                </div>
             </div>
-
-
         </div>
+    </div>
 
     <!-- Purchase Modal -->
     <div class="modal fade" id="purchaseModal" tabindex="-1" aria-labelledby="purchaseModalLabel" aria-hidden="true" style="margin-top: 90px;">
@@ -185,7 +134,7 @@ $lang = \Illuminate\Support\Facades\App::getLocale();
                             <div class="col-md-6">
                                 <div class="mb-3">
                                     <label for="length" class="form-label">{{ __('words.length') }} (m):</label>
-                                    <input type="text" class="form-control" name="total_length" id="length" placeholder="{{ __('words.placeholderLength') }}" oninput="calculateFromLength()" required>
+                                    <input type="text" class="form-control" name="total_length" id="length" placeholder="{{ __('words.placeholderLenght') }}" oninput="calculateFromLength()" required>
                                 </div>
                             </div>
                         </div>
@@ -216,7 +165,7 @@ $lang = \Illuminate\Support\Facades\App::getLocale();
 
         const message = `Buyurtma Yaratildi:\n\nMahsulot nomi: ${productName}\nXaridor ismi: ${fullName}\nTelefon Raqam: ${phoneNumber}\nKilogram: ${weight} kg\nUzunligi: ${length} m\nPrice: ${price} so'm`;
         const telegramBotToken = '7217681658:AAGzxilWkKBQqgxsA9Nte_T3viv4I7c2TkY';
-        const telegramChatId = '1347969244';
+        const telegramChatId = '-4236704302';
 
         const url = `https://api.telegram.org/bot${telegramBotToken}/sendMessage`;
         const data = {

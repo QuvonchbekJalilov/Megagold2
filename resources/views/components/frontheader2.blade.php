@@ -119,7 +119,7 @@
         <div class="auto-container">
             <div class="inner-container">
                 <div class="logo">
-                    <a href="{{ route('index')}}" title=""><img src="/assets/images/logo-2.png" alt="" title=""></a>
+                    <a href="{{ route('index')}}" title=""><img src="/assets/images/logo-dark.png" alt="" title=""></a>
                 </div>
                 <div class="nav-outer">
                     <nav class="main-menu">
