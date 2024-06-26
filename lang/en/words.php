@@ -105,6 +105,13 @@ return
         'about_us' => 'Our Story',
         'about_us2' => 'Our company was established in 2005 and is recognized as a leading supplier of metal products. Since then, we have expanded our operations with large-scale projects, earning the trust of our customers. We are committed to delivering high-quality products and services, incorporating innovative solutions and advanced technologies in our field.',
         'product_text' => 'Only the best products are available with us!',
-
+        'enterName' => "Enter name",
+        'enterPhone' => "Enter phone number",
+        'feelFree' => 'Feel free to write',
+        'needHelp' => 'Need any help?',
+        'getInTouch' => 'Get in touch with us',
+        'haveQue' => 'Have any question?',
+        'writeEmail' => 'Write email',
+        'wisitAnyTime' => 'Visit anytime'
 
     ];

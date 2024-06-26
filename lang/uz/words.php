@@ -108,9 +108,16 @@ return
         'contact_1'=>'Biz bila bog`laning',
         'about_us' => 'Bizning hikoyamiz',
         'about_us2' => 'Bizning kompaniyamiz 2005-yilda tashkil etilgan bo\'lib, metall mahsulotlarini yetkazib berish bo\'yicha yetakchi hisoblanadi. Boshlangan vaqtdan buyon mijozlarimizning ishonchini qozonib, keng ko\'lamli loyihalarni amalga oshirdik. Har doim yuqori sifatli mahsulotlar va xizmatlar taqdim etishga intilib, o\'z sohamizda innovatsion yechimlar va ilg\'or texnologiyalarni joriy etib keldik.',
-        'product_text' => 'Eng sifatli mahsulotlar  bizda!'
+        'product_text' => 'Eng sifatli mahsulotlar  bizda!',
 
 
-
+"enterName"=> "Ismingizni kiriting",
+        "enterPhone"=> "Telefon raqamingizni kiriting",
+        "feelFree"=> "Yozishdan tortinmang",
+        "needHelp"=> "Yordam kerakmi?",
+        "getInTouch"=> "Biz bilan bog'laning",
+        "haveQue"=> "Savolingiz bormi?",
+        "writeEmail"=> "Email yozing",
+        "wisitAnyTime"=> "Istalgan vaqtda tashrif buyuring"
     ];
 
