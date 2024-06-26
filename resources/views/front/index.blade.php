@@ -119,7 +119,6 @@ $lang = \Illuminate\Support\Facades\App::getLocale();
                         <div class="sec-title style-three">
                             <span class="sub-title">{{__('words.serv_pac')}}</span>
                             <h2>{{__('words.what')}}</h2>
-                            <h2>Nima uchun biz?</h2>
 
                         </div>
                         <div class="about-info">
@@ -132,8 +131,6 @@ $lang = \Illuminate\Support\Facades\App::getLocale();
                                 <div class="text">
                                     {{__('words.high_desc')}}
                                 </div>
-                                <h4 class="title">Yuqori sifat:</h4>
-                                <div class="text">Bizning barcha metall mahsulotlarimiz yuqori sifatli va xalqaro standartlarga mos ravishda ishlab chiqarilgan. Har bir mahsulotimiz kuchli, chidamli va uzoq muddat xizmat qiladi.</div>
                             </div>
                         </div>
                         <div class="about-info">
@@ -147,8 +144,6 @@ $lang = \Illuminate\Support\Facades\App::getLocale();
                                     {{__('words.high_desc2')}}
                                 </div>
 
-                                <h4 class="title">Keng assortiment:</h4>
-                                <div class="text">Bizning katalogimizda turli o'lcham va shakllarda metall mahsulotlar mavjud. Bu sizga loyihangiz uchun eng mos keladigan materiallarni tanlash imkonini beradi.</div>
                             </div>
                         </div>
                         <div class="about-info">
@@ -161,8 +156,6 @@ $lang = \Illuminate\Support\Facades\App::getLocale();
                                 <div class="text">
                                     {{__('words.high_desc3')}}
                                 </div>
-                                <h4 class="title">Maxsus buyurtmalar:</h4>
-                                <div class="text">Biz maxsus talablar asosida ishlab chiqarilgan metall mahsulotlarni taklif etamiz. Sizning texnik xususiyatlaringiz va o'lchamlaringiz bo'yicha buyurtmalarni qabul qilamiz.</div>
                             </div>
                         </div>
 
