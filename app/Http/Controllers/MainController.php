@@ -25,6 +25,7 @@ class MainController extends Controller
 
     public function index()
     {
+
         $visitorCount = DB::table('website_visits')->count();
 
         $homes = Home::latest()->take(1)->get();
@@ -41,7 +42,7 @@ class MainController extends Controller
         $blogs = Blog::latest()->take(4)->get();
         $blog_text = Blog::latest()->take(1)->get(['title_uz', 'title_ru', 'title_en', 'short_content_uz', 'short_content_ru', 'short_content_en', 'content_uz', 'content_ru', 'content_en']);
         $popular_products = CategoryOfProduct::where('type_id', '=', 1)->paginate(1);
-        
+
         return view('front.index', compact(
             'abouts',
             'homes',
@@ -155,7 +156,7 @@ class MainController extends Controller
         $categories = Category::all();
         $contacts = Contact::latest()->take(1)->get();
         $category = Category::find($product);
-        
+
 
         return view('front.singleProduct', compact('products', 'links', 'contacts','category', 'categories'));
     }

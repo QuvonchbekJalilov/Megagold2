@@ -4,6 +4,9 @@ return
     [
         'home' => 'Home',
         'about' => 'About Us',
+        'megagold' => 'Mega Metal Gold',
+        'megagold_about' => 'Our company is a leader in the delivery of metal products. We have been gaining the trust of our customers by providing high-quality metal products. Our company has many years of experience and serves our customers in construction, engineering, manufacturing, and many other fields.',
+
         'product' => 'Products',
         'contact' => 'Contact Us',
         'category' => 'Categories',

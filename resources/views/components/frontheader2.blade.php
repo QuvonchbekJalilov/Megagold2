@@ -25,7 +25,7 @@
         <div class="auto-container">
             <div class="inner-container">
                 <div class="logo-box">
-                    <div class="logo"><a href="index.html"><img src="images/logo-2.png" alt="" title="Transend"></a></div>
+                    <div class="logo"><a href="/"><img src="/assets/images/logo-dark.png" alt="" title="Transend" width="190px"></a></div>
                 </div>
 
                 <div class="main-box">
@@ -56,7 +56,7 @@
 
                     <div class="grid-nav-btn mobile-nav-toggler">
                         <div class="inner">
-                            <img class="icons" src="images/icons/icon-1.png" alt="Icon">
+                            <img class="icons" src="/assets/images/icons/icon-1.png" alt="Icon">
                         </div>
                     </div>
                 </div>

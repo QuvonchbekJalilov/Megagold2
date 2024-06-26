@@ -4,6 +4,8 @@ return
     [
         'home' => 'Asosiy',
         'about' => 'Biz haqimizda',
+         'megagold'=>'Mega Metal Gold',
+         'megagold_about'=>'Bizning kompaniyamiz metall mahsulotlarini yetkazib berish bo`yicha yetakchi hisoblanadi. Biz yuqori sifatli metall mahsulotlarni taqdim etish orqali mijozlarimizning ishonchini qozonib kelmoqdamiz. Kompaniyamiz ko`p yillik tajribaga ega bo`lib, qurilish, muhandislik, ishlab chiqarish va boshqa ko`plab sohalarda mijozlarimizga xizmat ko`rsatamiz.',
         'product' => 'Mahsulotlar',
         'category' => 'Kategoriya',
         'contact' => "Bog'lanish",
