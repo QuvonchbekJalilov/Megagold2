@@ -10,11 +10,11 @@ return
         'product' => 'Mahsulotlar',
         'category' => 'Kategoriya',
         'contact' => "Bog'lanish",
-        'our' => 'Bizning',
+        'our' => 'bizning',
         'blog' => 'Blog',
         'size' => 'Hajmi',
         'cost' => 'Narxi',
-        'theory' => 'Nzariyasi',
+        'theory' => 'Nazariyasi',
         "manufacturer" => 'Ishlab Chiqaruvchi',
         'unit' => 'Birligi',
         'back' => 'Orqaga',
@@ -64,22 +64,22 @@ return
 
         "serv_pac" => "Xizmat paketi",
         "what" => "Nima uchun biz?",
-        "high" => "Yuqori sifat",
+        "high" => "Yuqori sifat:",
         "high_desc" => "Bizning barcha metall mahsulotlarimiz yuqori sifatli va xalqaro standartlarga mos ravishda ishlab chiqarilgan. Har bir mahsulotimiz kuchli, chidamli va uzoq muddat xizmat qiladi.",
-        
-        "high2" => "Keng assortiment",
+
+        "high2" => "Keng assortiment:",
         "high_desc2" => "Our catalog includes metal products of various sizes and shapes. This allows you to choose the materials that are most suitable for your project.",
-        
-        "high3" => "Maxsus buyurtmalar",
+
+        "high3" => "Maxsus buyurtmalar:",
         "high_desc3" => "Biz maxsus talablar asosida ishlab chiqarilgan metall mahsulotlarni taklif etamiz. Sizning texnik xususiyatlaringiz va o'lchamlaringiz bo'yicha buyurtmalarni qabul qilamiz.",
-    
+
 
 
 
         "serv_pac2" => "Xizmat paketi",
         "our_customers" => "Mijozlarimiz",
         "customers_desc" => "Bizning mijozlarimiz orasida qurilish kompaniyalari, muhandislik firmalari, ishlab chiqarish zavodlari va ko'plab boshqa sanoat tarmoqlari mavjud. Biz har bir mijozimiz bilan uzoq muddatli va ishonchli hamkorlikni rivojlantirishga intilamiz.",
-        
+
         "rang_txt1" => "AVTO TRANSPORT",
         "rang_txt2" => "HAVO TRANSPORTI",
         "rang_txt3" => "OKEAN TRANSPORTI",
@@ -104,8 +104,14 @@ return
 
         "serv_pac3" => "Xizmat paketi",
         "blog_upd" => "Eng so'nggi blog yangilanishlari",
-        
-        "enterName"=> "Ismingizni kiriting",
+
+        'contact_1'=>'Biz bila bog`laning',
+        'about_us' => 'Bizning hikoyamiz',
+        'about_us2' => 'Bizning kompaniyamiz 2005-yilda tashkil etilgan bo\'lib, metall mahsulotlarini yetkazib berish bo\'yicha yetakchi hisoblanadi. Boshlangan vaqtdan buyon mijozlarimizning ishonchini qozonib, keng ko\'lamli loyihalarni amalga oshirdik. Har doim yuqori sifatli mahsulotlar va xizmatlar taqdim etishga intilib, o\'z sohamizda innovatsion yechimlar va ilg\'or texnologiyalarni joriy etib keldik.',
+        'product_text' => 'Eng sifatli mahsulotlar  bizda!',
+
+
+"enterName"=> "Ismingizni kiriting",
         "enterPhone"=> "Telefon raqamingizni kiriting",
         "feelFree"=> "Yozishdan tortinmang",
         "needHelp"=> "Yordam kerakmi?",
@@ -113,6 +119,5 @@ return
         "haveQue"=> "Savolingiz bormi?",
         "writeEmail"=> "Email yozing",
         "wisitAnyTime"=> "Istalgan vaqtda tashrif buyuring"
-
-];
+    ];
 

@@ -7,7 +7,7 @@ return
         'about' => 'About Us',
         'megagold' => 'Mega Metal Gold',
         'megagold_about' => 'Our company is a leader in the delivery of metal products. We have been gaining the trust of our customers by providing high-quality metal products. Our company has many years of experience and serves our customers in construction, engineering, manufacturing, and many other fields.',
-
+        'contact_1' => 'Contact us',
         'product' => 'Products',
         'contact' => 'Contact Us',
         'category' => 'Categories',
@@ -68,17 +68,17 @@ return
 
         "high2" => "Warehouse Storage:",
         "high_desc2" => "В нашем каталоге представлены металлические изделия различных размеров и форм. Это позволяет вам выбрать материалы, наиболее подходящие для вашего проекта.",
-        
+
         "high3" => "Special orders:",
         "high_desc3" => "We offer custom made metal products. We accept orders to your specifications and sizes.",
-    
-    
+
+
 
 
         "serv_pac2" => "Service package",
         "our_customers" => "Our customers",
         "customers_desc" => "Our clients include construction companies, engineering firms, manufacturing plants and many other industries. We strive to develop long-term and reliable cooperation with each of our customers.",
-        
+
         "rang_txt1" => "AUTO TRANSPORT",
         "rang_txt2" => "AIR TRANSPORT",
         "rang_txt3" => "OCEAN TRANSPORT",
@@ -102,7 +102,9 @@ return
 
         "serv_pac3" => "Service package",
         "blog_upd" => "Latest blog updates",
-
+        'about_us' => 'Our Story',
+        'about_us2' => 'Our company was established in 2005 and is recognized as a leading supplier of metal products. Since then, we have expanded our operations with large-scale projects, earning the trust of our customers. We are committed to delivering high-quality products and services, incorporating innovative solutions and advanced technologies in our field.',
+        'product_text' => 'Only the best products are available with us!',
         'enterName' => "Enter name",
         'enterPhone' => "Enter phone number",
         'feelFree' => 'Feel free to write',
@@ -112,6 +114,4 @@ return
         'writeEmail' => 'Write email',
         'wisitAnyTime' => 'Visit anytime'
 
-        
-
-];
+    ];

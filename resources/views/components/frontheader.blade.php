@@ -1,4 +1,3 @@
-<div class="preloader"></div>
 
 <header class="main-header header-style-five">
 

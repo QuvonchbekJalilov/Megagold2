@@ -322,8 +322,8 @@ $lang = \Illuminate\Support\Facades\App::getLocale();
                                         <li>{{__('words.radio_txt6')}}</li>
                                     </ul>
                                 </div>
-                                <a href="page-contact.html" class="theme-btn btn-style-two"><i class="icon fa fas fa-plus"></i><span class="btn-title">Request A
-                                        Quote</span></a>
+                                <a href="{{'contact'}}" class="theme-btn btn-style-two"><i class="icon fa fas fa-plus"></i><span class="btn-title">{{__('words.contact')}}
+                                        </span></a>
                             </div>
                         </div>
                     </div>
@@ -367,140 +367,6 @@ $lang = \Illuminate\Support\Facades\App::getLocale();
     </section>
 
 
-    <section class="project-section-five">
-        <div class="outer-box">
-            <div class="auto-container">
-                <div class="sec-title style-three light">
-                    <!-- <span class="sub-title">Project We Done</span> -->
-                    <h2>{{__('words.katolog')}}</h2>
-                </div>
-                <div class="carousel-outer">
-
-                    <div class="swiper project-three-slider">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-
-                                <div class="project-block-five">
-                                    <div class="inner-box">
-                                        <div class="image-box">
-                                            <figure class="image mb-0"><a href="page-project-details.html"><img src="/assets/images/resource/project-5.jpg" alt=""></a></figure>
-                                        </div>
-                                        <div class="content-box">
-                                            <h4 class="title"><a href="page-project-details.html">Exclusive Cargo
-                                                    Shipping</a></h4>
-                                            <div class="text">Lorem ipsum dolor samet consectetur adipiscing elit,
-                                                nec dapibus tristique egestas felis justo, nunc eros cubilia cras
-                                                facilisi curabitur posuere massa varius.</div>
-                                            <a href="page-project-details.html" class="theme-btn btn-style-two"><i class="icon fa fas fa-plus"></i><span class="btn-title">View
-                                                    Details</span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-
-                                <div class="project-block-five">
-                                    <div class="inner-box">
-                                        <div class="image-box">
-                                            <figure class="image mb-0"><a href="page-project-details.html"><img src="/assets/images/resource/project-5.jpg" alt=""></a></figure>
-                                        </div>
-                                        <div class="content-box">
-                                            <h4 class="title"><a href="page-project-details.html">Exclusive Cargo
-                                                    Shipping</a></h4>
-                                            <div class="text">Lorem ipsum dolor samet consectetur adipiscing elit,
-                                                nec dapibus tristique egestas felis justo, nunc eros cubilia cras
-                                                facilisi curabitur posuere massa varius.</div>
-                                            <a href="page-project-details.html" class="theme-btn btn-style-two"><i class="icon fa fas fa-plus"></i><span class="btn-title">View
-                                                    Details</span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-
-                                <div class="project-block-five">
-                                    <div class="inner-box">
-                                        <div class="image-box">
-                                            <figure class="image mb-0"><a href="page-project-details.html"><img src="/assets/images/resource/project-5.jpg" alt=""></a></figure>
-                                        </div>
-                                        <div class="content-box">
-                                            <h4 class="title"><a href="page-project-details.html">Exclusive Cargo
-                                                    Shipping</a></h4>
-                                            <div class="text">Lorem ipsum dolor samet consectetur adipiscing elit,
-                                                nec dapibus tristique egestas felis justo, nunc eros cubilia cras
-                                                facilisi curabitur posuere massa varius.</div>
-                                            <a href="page-project-details.html" class="theme-btn btn-style-two"><i class="icon fa fas fa-plus"></i><span class="btn-title">View
-                                                    Details</span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-
-                                <div class="project-block-five">
-                                    <div class="inner-box">
-                                        <div class="image-box">
-                                            <figure class="image mb-0"><a href="page-project-details.html"><img src="/assets/images/resource/project-5.jpg" alt=""></a></figure>
-                                        </div>
-                                        <div class="content-box">
-                                            <h4 class="title"><a href="page-project-details.html">Exclusive Cargo
-                                                    Shipping</a></h4>
-                                            <div class="text">Lorem ipsum dolor samet consectetur adipiscing elit,
-                                                nec dapibus tristique egestas felis justo, nunc eros cubilia cras
-                                                facilisi curabitur posuere massa varius.</div>
-                                            <a href="page-project-details.html" class="theme-btn btn-style-two"><i class="icon fa fas fa-plus"></i><span class="btn-title">View
-                                                    Details</span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-
-                                <div class="project-block-five">
-                                    <div class="inner-box">
-                                        <div class="image-box">
-                                            <figure class="image mb-0"><a href="page-project-details.html"><img src="/assets/images/resource/project-5.jpg" alt=""></a></figure>
-                                        </div>
-                                        <div class="content-box">
-                                            <h4 class="title"><a href="page-project-details.html">Exclusive Cargo
-                                                    Shipping</a></h4>
-                                            <div class="text">Lorem ipsum dolor samet consectetur adipiscing elit,
-                                                nec dapibus tristique egestas felis justo, nunc eros cubilia cras
-                                                facilisi curabitur posuere massa varius.</div>
-                                            <a href="page-project-details.html" class="theme-btn btn-style-two"><i class="icon fa fas fa-plus"></i><span class="btn-title">View
-                                                    Details</span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-
-                                <div class="project-block-five">
-                                    <div class="inner-box">
-                                        <div class="image-box">
-                                            <figure class="image mb-0"><a href="page-project-details.html"><img src="/assets/images/resource/project-5.jpg" alt=""></a></figure>
-                                        </div>
-                                        <div class="content-box">
-                                            <h4 class="title"><a href="page-project-details.html">Exclusive Cargo
-                                                    Shipping</a></h4>
-                                            <div class="text">Lorem ipsum dolor samet consectetur adipiscing elit,
-                                                nec dapibus tristique egestas felis justo, nunc eros cubilia cras
-                                                facilisi curabitur posuere massa varius.</div>
-                                            <a href="page-project-details.html" class="theme-btn btn-style-two"><i class="icon fa fas fa-plus"></i><span class="btn-title">View
-                                                    Details</span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-                </div>
-            </div>
-        </div>
-    </section>
 
 
     <div class="video-section-two">
@@ -509,33 +375,32 @@ $lang = \Illuminate\Support\Facades\App::getLocale();
         </div>
         <div class="auto-container">
             <div class="row align-items-end">
-                <div class="content-column col-xl-5 order-2">
+                <div class="content-column col-xl-5 order-2 ">
                     <div class="sec-title style-three">
-                        <span class="sub-title">Service Package</span>
-                        <h2>Why You Should <br>Choose Us?</h2>
-                        <div class="text">There are many variations of passages of Lorem <br>Ipsum available, but
-                            the majority have suffered <br>alteration in some form.</div>
+
+                        <h2>{{__('words.about_us')}}</h2>
+                        <div class="text">{{__('words.about_us2')}}</div>
                     </div>
                     <ul class="list-style-two">
-                        <li>Emergency mechanical business solutions</li>
-                        <li>Top quality services with reasonable price</li>
-                        <li>Reliable & experienced contractors</li>
+                        <li>{{__('words.radio_txt4')}}</li>
+                        <li>{{__('words.radio_txt5')}}</li>
+                        <li>{{__('words.radio_txt3')}}</li>
                     </ul>
                 </div>
                 <div class="image-column col-xl-7 order-xl-2">
                     <div class="inner-column">
-                        <figure class="image mb-0"><img src="/assets/images/background/7.jpg" alt="Image"></figure>
+                        <figure class="image mb-0"><img src="/assets/images/background/10.jpg" alt="Image" width="80%"></figure>
                         <div class="video-box">
                             <div class="btn-box">
-                                <a href="https://www.youtube.com/watch?v=Fvae8nxzVz4" class="play-now lightbox-image" data-fancybox="gallery" data-caption="">
+                                <a href="https://www.youtube.com/watch?v=buWkiNvk6Oo" class="play-now lightbox-image" data-fancybox="gallery" data-caption="">
                                     <i class="icon fa fa-play" aria-hidden="true"></i>
                                 </a>
                             </div>
                         </div>
                         <div class="experience">
-                            <div class="inner">
+                            <div class="inner" style="width:260px">
                                 <i class="icon flaticon-team"></i>
-                                <h5 title="title">Dedicated <br>Customer <br>Teams</h5>
+                                <h5  title="title" >{{__('words.product_text')}}</h5>
                             </div>
                         </div>
                     </div>
@@ -582,10 +447,9 @@ $lang = \Illuminate\Support\Facades\App::getLocale();
                 <div class="bg-image" style="background-image: url(/assets/images/background/4.jpg);"></div>
                 <div class="inner-box">
                     <div class="sec-title style-three light mb-0">
-                        <h2>Let us work together to make a difference</h2>
-                        <div class="text">Vehicula sed habitasse phasellus fames suscipit ulputate venenatis </div>
+                        <h2>{{__('words.contact_1')}}</h2>
                     </div>
-                    <a href="page-contact.html" class="theme-btn btn-style-two hvr-light"><i class="icon fa fas fa-plus"></i><span class="btn-title">Request A Quote</span></a>
+                    <a href="{{'contact'}}" class="theme-btn btn-style-two hvr-light"><i class="icon fa fas fa-plus"></i><span class="btn-title">{{__('words.contact')}}</span></a>
                 </div>
             </div>
         </div>
