@@ -13,8 +13,8 @@ $lang = \Illuminate\Support\Facades\App::getLocale();
                     <div class="auto-container">
                         <div class="row">
                             <div class="content-box col-xl-7 col-lg-8 col-md-12 col-sm-12 order-2 pe-lg-0">
-                                <h1 class="title animate-2">{{$tm['short_content_' .$lang]}}</h1>
-                                <div class="text animate-3">{{$tm['title_'.$lang]}}
+                                <h1 class="title animate-2">{{$tm['title_'.$lang]}}</h1>
+                                <div class="text animate-3">  {{$tm['short_content_' .$lang]}}
                                 </div>
                                 <div class="btn-box animate-4">
                                     <a href="{{route('contact')}}" class="theme-btn btn-style-two"><i class="icon fa fas fa-plus"></i><span class="btn-title">{{__('words.contact')}}
