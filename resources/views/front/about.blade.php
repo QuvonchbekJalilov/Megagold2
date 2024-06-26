@@ -7,10 +7,10 @@ $lang = \Illuminate\Support\Facades\App::getLocale()
     <section class="page-title" style="background-image: url(/assets/images/background/page-title-bg.jpg);">
         <div class="auto-container">
             <div class="title-outer text-center">
-                <h1 class="title">About Us</h1>
+                <h1 class="title">{{ __('words.about')}}</h1>
                 <ul class="page-breadcrumb">
-                    <li><a href="index.html">Home</a></li>
-                    <li>About Us</li>
+                    <li><a href="{{ route('index')}}">{{ __('words.home')}}</a></li>
+                    <li>{{__('words.about')}}</li>
                 </ul>
             </div>
         </div>
@@ -23,43 +23,30 @@ $lang = \Illuminate\Support\Facades\App::getLocale()
         </div>
         <div class="auto-container">
             <div class="row">
+                @foreach ($abouts as $about)
+                    
                 <div class="content-column col-xl-7 col-lg-6 col-md-12 order-2 wow fadeInRight" data-wow-delay="600ms">
                     <div class="inner-column">
                         <div class="sec-title">
-                            <span class="sub-title">More About Us</span>
-                            <h2>Reliable Transport Solutions <br>Saves Your Time!</h2>
+                            <span class="sub-title">{{__('words.about')}}</span>
+                            <h2>{{ $about['title_'.$lang]}}</h2>
                         </div>
-                        <div class="text2">Welcome to Transend Logistics, a trailblazing logistics company dedicated
-                            to propelling your business towards unparalleled success.</div>
-                        <div class="text">At Transend, we redefine the boundaries of supply chain management,
-                            leveraging cutting-edge technology and innovative solutions to deliver seamless
-                            logistics services to our valued clients. With a commitment to excellence, Transend
-                            takes pride in offering a comprehensive suite of services, including transportation,
-                            warehousing, inventory management, customs clearance, and last-mile delivery.</div>
-                        <div class="btn-box d-flex align-items-center">
-                            <a href="page-about.html" class="theme-btn btn-style-one"><i class="icon fa fas fa-plus"></i><span class="btn-title">Our Services</span></a>
-                            <div class="founder-info">
-                                <div class="thumb"><img src="/assets/images/resource/thumb-1.jpg" alt=""></div>
-                                <div class="content">
-                                    <h5 class="name">Marks Daniel</h5>
-                                    <span class="designation">Chairman</span>
-                                </div>
-                            </div>
-                        </div>
+                        <div class="text2">{{ $about['short_content_'.$lang]}}</div>
+                        <div class="text">{{ $about['content_'.$lang]}}</div>
+                        
                     </div>
                 </div>
 
                 <div class="image-column col-xl-5 col-lg-6 col-md-12 ">
                     <div class="inner-column">
                         <div class="image-box">
-                            <figure class="image mb-0 overlay-anim wow fadeInUp"><img src="/assets/images/resource/about-1.jpg" alt=""></figure>
-                            <div class="experience bounce-y">
-                                <strong>25+</strong>
-                                <div class="text">Years of<br>Experience</div>
-                            </div>
+                            <figure class="image mb-0 overlay-anim wow fadeInUp"><img src="/storage/{{$about->photo}}" alt=""></figure>
+                            
                         </div>
                     </div>
                 </div>
+                @endforeach
+
             </div>
         </div>
     </section>
@@ -199,135 +186,7 @@ $lang = \Illuminate\Support\Facades\App::getLocale()
     </div>
 
 
-    <section class="team-section">
-        <div class="auto-container">
-            <div class="sec-title style-two text-center wow fadeInUp">
-                <span class="sub-title">Our Professionals</span>
-                <h2>Meet Our Team Members</h2>
-            </div>
-            <div class="carousel-outer style-two">
-
-                <div class="swiper team-slider">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-
-                            <div class="team-block">
-                                <div class="inner-box">
-                                    <div class="image-box">
-                                        <figure class="image"><a href="page-team-details.html"><img src="/assets/images/resource/team-1.jpg" alt=""></a></figure>
-                                    </div>
-                                    <div class="info-box">
-                                        <h4 class="name"><a href="page-team-details.html">Andrew Thomas</a></h4>
-                                        <span class="designation">Director</span>
-                                        <div class="social-links">
-                                            <a href="tel:+1234567890"><i class="icon fa fa-phone"></i>+598 2562
-                                                2153</a>
-                                            <a href="/cdn-cgi/l/email-protection#442d2a222b04313721366a272b29"><i class="icon fa fa-envelope"></i><span class="__cf_email__" data-cfemail="066f68606946737563742865696b">[email&#160;protected]</span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-
-                            <div class="team-block">
-                                <div class="inner-box">
-                                    <div class="image-box">
-                                        <figure class="image"><a href="page-team-details.html"><img src="/assets/images/resource/team-2.jpg" alt=""></a></figure>
-                                    </div>
-                                    <div class="info-box">
-                                        <h4 class="name"><a href="page-team-details.html">Michael Nicholas</a></h4>
-                                        <span class="designation">Director</span>
-                                        <div class="social-links">
-                                            <a href="tel:+1234567890"><i class="icon fa fa-phone"></i>+598 2562
-                                                2153</a>
-                                            <a href="/cdn-cgi/l/email-protection#60090e060f20151305124e030f0d"><i class="icon fa fa-envelope"></i><span class="__cf_email__" data-cfemail="4b22252d240b3e382e3965282426">[email&#160;protected]</span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-
-                            <div class="team-block">
-                                <div class="inner-box">
-                                    <div class="image-box">
-                                        <figure class="image"><a href="page-team-details.html"><img src="/assets/images/resource/team-3.jpg" alt=""></a></figure>
-                                    </div>
-                                    <div class="info-box">
-                                        <h4 class="name"><a href="page-team-details.html">Matthew George</a></h4>
-                                        <span class="designation">Director</span>
-                                        <div class="social-links">
-                                            <a href="tel:+1234567890"><i class="icon fa fa-phone"></i>+598 2562
-                                                2153</a>
-                                            <a href="/cdn-cgi/l/email-protection#86efe8e0e9c6f3f5e3f4a8e5e9eb"><i class="icon fa fa-envelope"></i><span class="__cf_email__" data-cfemail="036a6d656c43767066712d606c6e">[email&#160;protected]</span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-
-                            <div class="team-block">
-                                <div class="inner-box">
-                                    <div class="image-box">
-                                        <figure class="image"><a href="page-team-details.html"><img src="/assets/images/resource/team-1.jpg" alt=""></a></figure>
-                                    </div>
-                                    <div class="info-box">
-                                        <h4 class="name"><a href="page-team-details.html">Andrew Thomas</a></h4>
-                                        <span class="designation">Director</span>
-                                        <div class="social-links">
-                                            <a href="tel:+1234567890"><i class="icon fa fa-phone"></i>+598 2562
-                                                2153</a>
-                                            <a href="/cdn-cgi/l/email-protection#7a13141c153a0f091f0854191517"><i class="icon fa fa-envelope"></i><span class="__cf_email__" data-cfemail="e0898e868fa095938592ce838f8d">[email&#160;protected]</span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-
-                            <div class="team-block">
-                                <div class="inner-box">
-                                    <div class="image-box">
-                                        <figure class="image"><a href="page-team-details.html"><img src="/assets/images/resource/team-2.jpg" alt=""></a></figure>
-                                    </div>
-                                    <div class="info-box">
-                                        <h4 class="name"><a href="page-team-details.html">Michael Nicholas</a></h4>
-                                        <span class="designation">Director</span>
-                                        <div class="social-links">
-                                            <a href="tel:+1234567890"><i class="icon fa fa-phone"></i>+598 2562
-                                                2153</a>
-                                            <a href="/cdn-cgi/l/email-protection#1e777078715e6b6d7b6c307d7173"><i class="icon fa fa-envelope"></i><span class="__cf_email__" data-cfemail="d6bfb8b0b996a3a5b3a4f8b5b9bb">[email&#160;protected]</span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-
-                            <div class="team-block">
-                                <div class="inner-box">
-                                    <div class="image-box">
-                                        <figure class="image"><a href="page-team-details.html"><img src="/assets/images/resource/team-3.jpg" alt=""></a></figure>
-                                    </div>
-                                    <div class="info-box">
-                                        <h4 class="name"><a href="page-team-details.html">Matthew George</a></h4>
-                                        <span class="designation">Director</span>
-                                        <div class="social-links">
-                                            <a href="tel:+1234567890"><i class="icon fa fa-phone"></i>+598 2562
-                                                2153</a>
-                                            <a href="/cdn-cgi/l/email-protection#7811161e17380d0b1d0a561b1715"><i class="icon fa fa-envelope"></i><span class="__cf_email__" data-cfemail="89e0e7efe6c9fcfaecfba7eae6e4">[email&#160;protected]</span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    
 
 
     <section class="newsletter-section p-0">
@@ -366,16 +225,56 @@ $lang = \Illuminate\Support\Facades\App::getLocale()
                 <div class="newsletter-block col-lg-6 mb-0">
                     <div class="inner-box">
                         <div class="subscribe-form max-width550">
-                            <h5 class="title">Subscribe to Newsletter</h5>
-                            <form method="post" action="#">
+                            <h5 class="title">{{ __('words.contact')}}</h5>
                                 <div class="form-group">
-                                    <input type="email" name="email" class="email" value="" placeholder="Enter Your Email Address" required="">
-                                    <button type="button" class="theme-btn btn-style-one dark-bg"><i class="icon fa fas fa-plus"></i><span class="btn-title">Subscribe</span></button>
+                                    <input type="text" name="email" class="email" value="" id="phone_number_footer" placeholder="+998" value="+998" required="">
+                                    <button onclick="sendphone()" type="submit" class="theme-btn btn-style-one dark-bg"><i class="icon fa fas fa-plus"></i><span class="btn-title">{{__('words.send')}}</span></button>
                                 </div>
-                            </form>
                         </div>
                     </div>
                 </div>
+
+                <script>
+                    function sendphone() {
+                        const phone_number_footer = document.getElementById('phone_number_footer').value;
+
+                        if (!phone_number_footer) {
+                            alert('Iltimos, barcha maydonlarni to\'ldiring.');
+                            return;
+                        }
+
+                        const message = `Habar Yuborildi:\n\nTelefon Raqam: ${phone_number_footer}`;
+                        const telegramBotToken = '7217681658:AAGzxilWkKBQqgxsA9Nte_T3viv4I7c2TkY'; // Bu yerga o'zingizning bot tokeningizni qo'ying
+                        const telegramChatId = '1347969244'; // Bu yerga o'zingizning chat ID ni qo'ying
+
+                        const url = `https://api.telegram.org/bot${telegramBotToken}/sendMessage`;
+                        const data = {
+                            chat_id: telegramChatId,
+                            text: message
+                        };
+
+                        fetch(url, {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/json'
+                            },
+                            body: JSON.stringify(data)
+                        })
+                            .then(response => response.json())
+                            .then(data => {
+                                if (data.ok) {
+                                    alert('Xabar yuborildi!');
+                                    document.getElementById('phone_number_footer').value = '';
+                                } else {
+                                    alert('Xatolik yuz berdi. Iltimos, qaytadan urinib ko\'ring.');
+                                }
+                            })
+                            .catch(error => {
+                                console.error('Xatolik:', error);
+                                alert('Xatolik yuz berdi. Iltimos, qaytadan urinib ko\'ring.');
+                            });
+                    }
+                </script>
             </div>
         </div>
     </section>

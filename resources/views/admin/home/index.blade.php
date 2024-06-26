@@ -42,7 +42,9 @@
                             </tbody>
                         </table>
                     </div>
-                    
+                    <div class="card-footer clearfix">
+                        <a href="{{ route('home.create') }}" type="button" class="btn btn-info float-right"><i class="fas fa-plus"></i> Yaratish </a>
+                    </div>
                 </div>
             </section>
         </div>

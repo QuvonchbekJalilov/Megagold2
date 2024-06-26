@@ -36,18 +36,6 @@
                             @if ($home->first_photo)
                                 <img src="{{ asset('storage/' . $home->first_photo) }}" alt="First Photo" class="img-thumbnail m-2" style="width: 150px; height: 150px;">
                             @endif
-                            @if ($home->second_photo)
-                                <img src="{{ asset('storage/' . $home->second_photo) }}" alt="Second Photo" class="img-thumbnail m-2" style="width: 150px; height: 150px;">
-                            @endif
-                            @if ($home->third_photo)
-                                <img src="{{ asset('storage/' . $home->third_photo) }}" alt="Third Photo" class="img-thumbnail m-2" style="width: 150px; height: 150px;">
-                            @endif
-                            @if ($home->fourth_photo)
-                                <img src="{{ asset('storage/' . $home->fourth_photo) }}" alt="Fourth Photo" class="img-thumbnail m-2" style="width: 150px; height: 150px;">
-                            @endif
-                            @if ($home->fifth_photo)
-                                <img src="{{ asset('storage/' . $home->fifth_photo) }}" alt="Fifth Photo" class="img-thumbnail m-2" style="width: 150px; height: 150px;">
-                            @endif
                         </div>
                     </div>
                 </div>
