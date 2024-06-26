@@ -44,7 +44,7 @@ $lang = \Illuminate\Support\Facades\App::getLocale();
                     <div class="shop-sidebar w-100">
                         <div class="sidebar-widget category-widget" style="background-color: #2d2b3e !important;">
                             <div class="widget-title">
-                                <h5 class="widget-title" style="color: white;">{{ __('words.categories') }}</h5>
+                                <h5 class="widget-title" style="color: white;">{{ __('words.category') }}</h5>
                             </div>
                             <div class="widget-content">
                                 <ul class="category-list clearfix">
@@ -134,7 +134,7 @@ $lang = \Illuminate\Support\Facades\App::getLocale();
                             <div class="col-md-6">
                                 <div class="mb-3">
                                     <label for="length" class="form-label">{{ __('words.length') }} (m):</label>
-                                    <input type="text" class="form-control" name="total_length" id="length" placeholder="{{ __('words.placeholderLength') }}" oninput="calculateFromLength()" required>
+                                    <input type="text" class="form-control" name="total_length" id="length" placeholder="{{ __('words.placeholderLenght') }}" oninput="calculateFromLength()" required>
                                 </div>
                             </div>
                         </div>
@@ -165,7 +165,7 @@ $lang = \Illuminate\Support\Facades\App::getLocale();
 
         const message = `Buyurtma Yaratildi:\n\nMahsulot nomi: ${productName}\nXaridor ismi: ${fullName}\nTelefon Raqam: ${phoneNumber}\nKilogram: ${weight} kg\nUzunligi: ${length} m\nPrice: ${price} so'm`;
         const telegramBotToken = '7217681658:AAGzxilWkKBQqgxsA9Nte_T3viv4I7c2TkY';
-        const telegramChatId = '1347969244';
+        const telegramChatId = '-4236704302';
 
         const url = `https://api.telegram.org/bot${telegramBotToken}/sendMessage`;
         const data = {

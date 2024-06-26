@@ -101,7 +101,17 @@ return
 
 
         "serv_pac3" => "Service package",
-        "blog_upd" => "Latest blog updates"
+        "blog_upd" => "Latest blog updates",
+
+        'enterName' => "Enter name",
+        'enterPhone' => "Enter phone number",
+        'feelFree' => 'Feel free to write',
+        'needHelp' => 'Need any help?',
+        'getInTouch' => 'Get in touch with us',
+        'haveQue' => 'Have any question?',
+        'writeEmail' => 'Write email',
+        'wisitAnyTime' => 'Visit anytime'
+
         
 
 ];
