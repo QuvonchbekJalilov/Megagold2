@@ -36,14 +36,14 @@ class BannerController extends Controller
             $path1 = $request->file('photo')->storeAs('post_photo', $name);
 
         }
-        
+
 
         banner::create([
             'title_uz' => $request->title_uz,
             'title_ru' => $request->title_ru,
             'title_en' => $request->title_en,
             'photo' => $path1 ?? null,
-            
+
         ]);
 
         return redirect()->route('banner.index')->with('success', 'success');
@@ -81,7 +81,7 @@ class BannerController extends Controller
             $path1 = $request->file('photo')->storeAs('post_photo', $name);
         }
 
-        $home->update([
+        $banner->update([
             'title_uz' => $request->title_uz,
             'title_ru' => $request->title_ru,
             'title_en' => $request->title_en,

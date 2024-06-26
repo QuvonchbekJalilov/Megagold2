@@ -6,10 +6,10 @@ $lang = \Illuminate\Support\Facades\App::getLocale()
     <section class="page-title" style="background-image: url(/assets/images/background/page-title-bg.jpg);">
         <div class="auto-container">
             <div class="title-outer text-center">
-                <h1 class="title">Contact Us</h1>
+                <h1 class="title">{{__('words.contact')}}</h1>
                 <ul class="page-breadcrumb">
-                    <li><a href="index.html">Home</a></li>
-                    <li>Contact</li>
+                    <li><a href="index.html">{{__('words.home')}}</a></li>
+                    <li>{{__('words.contact')}}</li>
                 </ul>
             </div>
         </div>

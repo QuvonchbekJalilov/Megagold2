@@ -15,22 +15,22 @@
                                 @enderror
                             </div>
                             <div class="mb-3">
-                                <label for="title_uz" class="form-label">Hodim haqida ma'lumot uz</label>
-                                <input type="text" id="title_uz" class="form-control" name="title_uz" placeholder="Hodim haqida ma'lumot uz" value="{{ old('title_uz') }}">
+                                <label for="title_uz" class="form-label">Lavozimi uz</label>
+                                <input type="text" id="title_uz" class="form-control" name="title_uz" placeholder="Lavozimi uz" value="{{ old('title_uz') }}">
                                 @error('title_uz')
                                 <div class="text-danger">title_uz xato: {{ $message }}</div>
                                 @enderror
                             </div>
                             <div class="mb-3">
-                                <label for="title_ru" class="form-label">Hodim haqida ma'lumot ru</label>
-                                <input type="text" id="title_ru" class="form-control" name="title_ru" placeholder="Hodim haqida ma'lumot ru" value="{{ old('title_ru') }}">
+                                <label for="title_ru" class="form-label">Lavozimi ru</label>
+                                <input type="text" id="title_ru" class="form-control" name="title_ru" placeholder="Lavozimi ru" value="{{ old('title_ru') }}">
                                 @error('title_ru')
                                 <div class="text-danger">title_ru xato: {{ $message }}</div>
                                 @enderror
                             </div>
                             <div class="mb-3">
-                                <label for="title_en" class="form-label">Hodim haqida ma'lumot en</label>
-                                <input type="text" id="title_en" class="form-control" name="title_en" placeholder="Hodim haqida ma'lumot en" value="{{ old('title_en') }}">
+                                <label for="title_en" class="form-label">Lavozimi en</label>
+                                <input type="text" id="title_en" class="form-control" name="title_en" placeholder="Lavozimi en" value="{{ old('title_en') }}">
                                 @error('title_en')
                                 <div class="text-danger">title_en xato: {{ $message }}</div>
                                 @enderror
