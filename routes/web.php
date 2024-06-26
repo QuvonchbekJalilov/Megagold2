@@ -3,6 +3,7 @@ use App\Http\Controllers\AboutController;
 use App\Http\Controllers\AboutAllController;
 use App\Http\Controllers\ActiveClientController;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\BannerController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\CategoryOfProductController;
@@ -60,6 +61,7 @@ Route::middleware(['checkRole:admin', 'auth'])->group(function () {
         Route::resource('/blog', BlogController::class);
         Route::resource('/profile', UserController::class);
         Route::resource('orders', OrderController::class);
+        Route::resource('banner', BannerController::class);
         Route::post('/orders/{order}/update-status', [OrderController::class, 'updateStatus'])->name('orders.update-status');
         Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
     });

@@ -56,45 +56,14 @@
                         <div class="col-md-6">
                             <!-- Image upload fields with preview -->
                             <div class="mb-3">
-                                <label for="first_photo" class="form-label">Rasm hajmi: 760x556</label>
+                                <label for="first_photo" class="form-label">Rasm </label>
                                 <input name="first_photo" type="file" class="form-control" id="first_photo" onchange="displayImage(this, 'first_photo_preview')">
                                 @error('first_photo')
                                 <div class="text-danger">Faylni yuklashni unutdingiz: {{ $message }}</div>
                                 @enderror
                                 <img id="first_photo_preview" style="display:none; max-width: 100%; margin-top: 10px;" />
                             </div>
-                            <div class="mb-3">
-                                <label for="second_photo" class="form-label">Rasm hajmi: 238x147</label>
-                                <input name="second_photo" type="file" class="form-control" id="second_photo" onchange="displayImage(this, 'second_photo_preview')">
-                                @error('second_photo')
-                                <div class="text-danger">Faylni yuklashni unutdingiz: {{ $message }}</div>
-                                @enderror
-                                <img id="second_photo_preview" style="display:none; max-width: 100%; margin-top: 10px;" />
-                            </div>
-                            <div class="mb-3">
-                                <label for="third_photo" class="form-label">Rasm hajmi: 64x77</label>
-                                <input name="third_photo" type="file" class="form-control" id="third_photo" onchange="displayImage(this, 'third_photo_preview')">
-                                @error('third_photo')
-                                <div class="text-danger">Faylni yuklashni unutdingiz: {{ $message }}</div>
-                                @enderror
-                                <img id="third_photo_preview" style="display:none; max-width: 100%; margin-top: 10px;" />
-                            </div>
-                            <div class="mb-3">
-                                <label for="fourth_photo" class="form-label">Rasm hajmi: 116x61</label>
-                                <input name="fourth_photo" type="file" class="form-control" id="fourth_photo" onchange="displayImage(this, 'fourth_photo_preview')">
-                                @error('fourth_photo')
-                                <div class="text-danger">Faylni yuklashni unutdingiz: {{ $message }}</div>
-                                @enderror
-                                <img id="fourth_photo_preview" style="display:none; max-width: 100%; margin-top: 10px;" />
-                            </div>
-                            <div class="mb-3">
-                                <label for="fifth_photo" class="form-label">Rasm hajmi: 106x76</label>
-                                <input name="fifth_photo" type="file" class="form-control" id="fifth_photo" onchange="displayImage(this, 'fifth_photo_preview')">
-                                @error('fifth_photo')
-                                <div class="text-danger">Faylni yuklashni unutdingiz: {{ $message }}</div>
-                                @enderror
-                                <img id="fifth_photo_preview" style="display:none; max-width: 100%; margin-top: 10px;" />
-                            </div>
+                            
                         </div>
                     </div>
                     <div class="d-flex justify-content">

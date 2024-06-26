@@ -108,11 +108,11 @@ class MainController extends Controller
     public function single_blog($blog)
     {
         $blog = Blog::find($blog);
-        $lastBlogs = Blog::take(4)->latest()->get();
+        $lastBlogs = Blog::take(3)->latest()->get();
         $links = Link::latest()->take(1)->get();
         $contacts = Contact::latest()->take(1)->get();
 
-        $categories = Category::orderBy('created_at', 'desc')->take(6)->get(['name_uz', 'name_ru', 'name_en']);
+        $categories = Category::orderBy('created_at', 'desc')->take(6)->get(['id','name_uz', 'name_ru', 'name_en']);
         return view('front.singleBlog', compact('blog', 'categories', 'lastBlogs','links', 'contacts'));
     }
     public function product()

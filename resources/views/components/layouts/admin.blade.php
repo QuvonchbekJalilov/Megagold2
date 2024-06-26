@@ -106,6 +106,12 @@ $visit = DB::table('website_visits')->count();
                                         <p>Bosh saxifa</p>
                                     </a>
                                 </li>
+                                <li class="nav-item">
+                                    <a href="{{ route('banner.index')}}" class="nav-link" id="link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Slide</p>
+                                    </a>
+                                </li>
                                 <ul class="nav nav-pills nav-sidebar" data-widget="treeview" role="menu" data-accordion="false">
                                     <li class="nav-item has-treeview menu-open">
                                         <a href="/admin/about" class="nav-link">
