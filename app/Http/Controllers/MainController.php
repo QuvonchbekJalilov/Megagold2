@@ -119,12 +119,13 @@ class MainController extends Controller
     }
     public function product()
     {
+        $categories = Category::all();
         $links = Link::latest()->take(1)->get();
         $products = Category::withCount('products')->orderBy('created_at', 'desc')->paginate(20);
         $contacts = Contact::latest()->take(1)->get();
         $numbers = 1;
 
-        return view('front.product', compact('links', 'contacts', 'numbers'))->with('products', $products);
+        return view('front.product', compact('links', 'contacts', 'numbers','categories'))->with('products', $products);
     }
     public function contact()
     {
