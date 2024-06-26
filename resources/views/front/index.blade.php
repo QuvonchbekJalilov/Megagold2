@@ -571,10 +571,6 @@ $lang = \Illuminate\Support\Facades\App::getLocale();
                 </div>
                 @endforeach
 
-
-
-
-
             </div>
     </section>
 
