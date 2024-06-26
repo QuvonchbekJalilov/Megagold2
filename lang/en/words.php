@@ -53,11 +53,38 @@ return
         'submit' => "Submit",
         'perTonna' => 'Price per tonna',
         'placeholderName' => 'Enter your name',
-'placeholderWeight' => 'Enter the weight',
-'placeholderLenght' => 'Enter the length',
-'language' => 'Select Language',
-'footerAbout' => "Step with us together towards a strong and stable future.",
-'message' => 'Message'
+        'placeholderWeight' => 'Enter the weight',
+        'placeholderLenght' => 'Enter the length',
+        'language' => 'Select Language',
+        'footerAbout' => "Step with us together towards a strong and stable future.",
+        'message' => 'Message',
 
 
-    ];
+        "serv_pac" => "Service Package",
+        "what" => "Why us?",
+        "high" => "High quality:",
+        "high_desc" => "All our metal products are of high quality and manufactured in accordance with international standards. Each of our products is strong, durable and long-lasting.",
+    
+
+
+        "serv_pac2" => "Service package",
+        "our_customers" => "Our customers",
+        "customers_desc" => "Our clients include construction companies, engineering firms, manufacturing plants and many other industries. We strive to develop long-term and reliable cooperation with each of our customers.",
+        
+        "rang_txt1" => "AUTO TRANSPORT",
+        "rang_txt2" => "AIR TRANSPORT",
+        "rang_txt3" => "OCEAN TRANSPORT",
+        "rang_txt4" => "TRAIN TRANSPORT",
+
+        "serv_pac22" => "Service package",
+        "our_values" => "Our values",
+        "our_values_desc" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+
+        "radio_txt1" => "Quality",
+        "radio_txt2" => "Reliability",
+        "radio_txt3" => "Customer orientation",
+
+        "radio_txt4" => "Innovation",
+        "radio_txt2" => "Team work",
+        "radio_txt3" => "Responsibility",
+];

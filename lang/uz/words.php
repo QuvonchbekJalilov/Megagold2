@@ -1,11 +1,10 @@
 <?php
 
-return
-    [
+return [
         'home' => 'Asosiy',
         'about' => 'Biz haqimizda',
-         'megagold'=>'Mega Metal Gold',
-         'megagold_about'=>'Bizning kompaniyamiz metall mahsulotlarini yetkazib berish bo`yicha yetakchi hisoblanadi. Biz yuqori sifatli metall mahsulotlarni taqdim etish orqali mijozlarimizning ishonchini qozonib kelmoqdamiz. Kompaniyamiz ko`p yillik tajribaga ega bo`lib, qurilish, muhandislik, ishlab chiqarish va boshqa ko`plab sohalarda mijozlarimizga xizmat ko`rsatamiz.',
+        'megagold'=>'Mega Metal Gold',
+        'megagold_about'=>'Bizning kompaniyamiz metall mahsulotlarini yetkazib berish bo`yicha yetakchi hisoblanadi. Biz yuqori sifatli metall mahsulotlarni taqdim etish orqali mijozlarimizning ishonchini qozonib kelmoqdamiz. Kompaniyamiz ko`p yillik tajribaga ega bo`lib, qurilish, muhandislik, ishlab chiqarish va boshqa ko`plab sohalarda mijozlarimizga xizmat ko`rsatamiz.',
         'product' => 'Mahsulotlar',
         'category' => 'Kategoriya',
         'contact' => "Bog'lanish",
@@ -48,18 +47,45 @@ return
         'name' => "Ismingizni kiritng",
         'buy' => 'Sotib Olish',
         'fullName' => 'To\'liq ism',
-'weight' => 'Vazn',
-'lenght' => 'Uzunlik',
-'submit' => "Yuborish",
-'perTonna' => '1 tonna narx',
-'placeholderName' => 'ismingizni kiriting',
-'placeholderWeight' => 'Armatura vaznini kiriting',
-'placeholderLenght' => 'Armatura uzunligini kiriting',
-'language' => 'Tilni tanlang',
+        'weight' => 'Vazn',
+        'lenght' => 'Uzunlik',
+        'submit' => "Yuborish",
+        'perTonna' => '1 tonna narx',
+        'placeholderName' => 'ismingizni kiriting',
+        'placeholderWeight' => 'Armatura vaznini kiriting',
+        'placeholderLenght' => 'Armatura uzunligini kiriting',
+        'language' => 'Tilni tanlang',
 
-'footerAbout' => "Biz bilan mustahkam va barqaror kelajak sari birgalikda qadam tashlang.",
+        'footerAbout' => "Biz bilan mustahkam va barqaror kelajak sari birgalikda qadam tashlang.",
 
-'message' => 'Habar',
+        'message' => 'Habar',
+
+        "serv_pac" => "Xizmat paketi",
+        "what" => "Nima uchun biz?",
+        "high" => "Yuqori sifat:",
+        "high_desc" => "Bizning barcha metall mahsulotlarimiz yuqori sifatli va xalqaro standartlarga mos ravishda ishlab chiqarilgan. Har bir mahsulotimiz kuchli, chidamli va uzoq muddat xizmat qiladi.",
+    
 
 
-    ];
+
+        "serv_pac2" => "Xizmat paketi",
+        "our_customers" => "Mijozlarimiz",
+        "customers_desc" => "Bizning mijozlarimiz orasida qurilish kompaniyalari, muhandislik firmalari, ishlab chiqarish zavodlari va ko'plab boshqa sanoat tarmoqlari mavjud. Biz har bir mijozimiz bilan uzoq muddatli va ishonchli hamkorlikni rivojlantirishga intilamiz.",
+        
+        "rang_txt1" => "AVTO TRANSPORT",
+        "rang_txt2" => "HAVO TRANSPORTI",
+        "rang_txt3" => "OKEAN TRANSPORTI",
+        "rang_txt4" => "POYDOL TRANSPORTI",
+
+        "serv_pac22" => "Xizmat paketi",
+        "our_values" => "Qadriyatlarimiz",
+        "our_values_desc" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+
+        "radio_txt1" => "Sifat",
+        "radio_txt2" => "Ishonchlilik",
+        "radio_txt3" => "Mijozlarga yo'naltirilganlik",
+
+        "radio_txt4" => "Innovatsiya",
+        "radio_txt2" => "Jamoaviy ish",
+        "radio_txt3" => "Mas'uliyat",
+];
