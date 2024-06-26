@@ -165,7 +165,7 @@ $lang = \Illuminate\Support\Facades\App::getLocale();
 
         const message = `Buyurtma Yaratildi:\n\nMahsulot nomi: ${productName}\nXaridor ismi: ${fullName}\nTelefon Raqam: ${phoneNumber}\nKilogram: ${weight} kg\nUzunligi: ${length} m\nPrice: ${price} so'm`;
         const telegramBotToken = '7217681658:AAGzxilWkKBQqgxsA9Nte_T3viv4I7c2TkY';
-        const telegramChatId = '-4236704302';
+        const telegramChatId = '1347969244';
 
         const url = `https://api.telegram.org/bot${telegramBotToken}/sendMessage`;
         const data = {
@@ -245,8 +245,11 @@ $lang = \Illuminate\Support\Facades\App::getLocale();
         const totalPrice = totalWeight * currentProductPrice / 1000;
         const formattedPrice = totalPrice.toLocaleString('uz-UZ', { style: 'currency', currency: 'UZS' });
 
-        weightInput.value = totalWeight;
-        priceInput.value = totalPrice.toFixed(2);
+        weightInput.value = totalWeight.toFixed(2);
+            priceInput.value = new Intl.NumberFormat('uz-UZ', {
+                style: 'currency',
+                currency: 'UZS'
+            }).format(totalPrice);
     }
 
     function calculateFromWeight() {
@@ -265,7 +268,10 @@ $lang = \Illuminate\Support\Facades\App::getLocale();
         const formattedPrice = totalPrice.toLocaleString('uz-UZ', { style: 'currency', currency: 'UZS' });
 
         lengthInput.value = totalLength.toFixed(2);
-        priceInput.value = totalPrice.toFixed(2);
+            priceInput.value = new Intl.NumberFormat('uz-UZ', {
+                style: 'currency',
+                currency: 'UZS'
+            }).format(totalPrice);
     }
     </script>
 </x-layouts.main2>
