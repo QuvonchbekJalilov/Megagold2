@@ -62,9 +62,16 @@ return
 
 
         "serv_pac" => "Service Package",
-        "what" => "Why us?",
+        "what" => "Why You Choose Us?",
         "high" => "High quality:",
         "high_desc" => "All our metal products are of high quality and manufactured in accordance with international standards. Each of our products is strong, durable and long-lasting.",
+
+        "high2" => "Warehouse Storage:",
+        "high_desc2" => "В нашем каталоге представлены металлические изделия различных размеров и форм. Это позволяет вам выбрать материалы, наиболее подходящие для вашего проекта.",
+        
+        "high3" => "Special orders:",
+        "high_desc3" => "We offer custom made metal products. We accept orders to your specifications and sizes.",
+    
     
 
 
@@ -86,6 +93,6 @@ return
         "radio_txt3" => "Customer orientation",
 
         "radio_txt4" => "Innovation",
-        "radio_txt2" => "Team work",
-        "radio_txt3" => "Responsibility",
+        "radio_txt5" => "Team work",
+        "radio_txt6" => "Responsibility",
 ];

@@ -62,5 +62,39 @@ return
 
 'message' => 'Habar',
 
+        "serv_pac" => "Xizmat paketi",
+        "what" => "Nima uchun biz?",
+        "high" => "Yuqori sifat:",
+        "high_desc" => "Bizning barcha metall mahsulotlarimiz yuqori sifatli va xalqaro standartlarga mos ravishda ishlab chiqarilgan. Har bir mahsulotimiz kuchli, chidamli va uzoq muddat xizmat qiladi.",
+        
+        "high2" => "Keng assortiment:",
+        "high_desc2" => "Our catalog includes metal products of various sizes and shapes. This allows you to choose the materials that are most suitable for your project.",
+        
+        "high3" => "Maxsus buyurtmalar:",
+        "high_desc3" => "Biz maxsus talablar asosida ishlab chiqarilgan metall mahsulotlarni taklif etamiz. Sizning texnik xususiyatlaringiz va o'lchamlaringiz bo'yicha buyurtmalarni qabul qilamiz.",
+    
 
-    ];
+
+
+        "serv_pac2" => "Xizmat paketi",
+        "our_customers" => "Mijozlarimiz",
+        "customers_desc" => "Bizning mijozlarimiz orasida qurilish kompaniyalari, muhandislik firmalari, ishlab chiqarish zavodlari va ko'plab boshqa sanoat tarmoqlari mavjud. Biz har bir mijozimiz bilan uzoq muddatli va ishonchli hamkorlikni rivojlantirishga intilamiz.",
+        
+        "rang_txt1" => "AVTO TRANSPORT",
+        "rang_txt2" => "HAVO TRANSPORTI",
+        "rang_txt3" => "OKEAN TRANSPORTI",
+        "rang_txt4" => "POEZD TRANSPORTI",
+
+        "serv_pac22" => "Xizmat paketi",
+        "our_values" => "Qadriyatlarimiz",
+        "our_values_desc" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+
+        "radio_txt1" => "Sifat",
+        "radio_txt2" => "Ishonchlilik",
+        "radio_txt3" => "Mijozlarga yo'naltirilganlik",
+
+        "radio_txt4" => "Innovatsiya",
+        "radio_txt5" => "Jamoaviy ish",
+        "radio_txt6" => "Mas'uliyat",
+];
+
