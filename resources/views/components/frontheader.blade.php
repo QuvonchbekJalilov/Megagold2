@@ -7,17 +7,13 @@
             <div class="inner-container">
                 <div class="top-left">
                     <ul class="list-style-four">
-                        <li><i class="icon fa fa-phone"></i> <a href="tel:+1234567890">+998 99 123 45 67</a>
+                        <li><i class="icon fa fa-phone"></i> <a href="tel:+998998405555">+998 99 840 55 55</a>
                         </li>
                         <li><i class="icon fa fa-envelope"></i> <a
-                                href="support@transend.com">megagold@info.com</a></li>
+                                href="mailto:info@megagold.uz">info@megagold.uz</a></li>
                     </ul>
                 </div>
-                <div class="top-right">
-                    <a href="#">News & Media</a>
-                    <a href="#">Careers</a>
-                    <a href="#">Help & FAQs</a>
-                </div>
+                
             </div>
         </div>
     </div>
@@ -36,7 +32,7 @@
                         <div class="inner">
                             <div class="icon"><i class="fa fa-phone"></i></div>
                             <div class="info">
-                                <a href="tel:1234567890">+998 99 422 22 22</a>
+                                <a href="tel:1234567890">+998 99 840 55 55</a>
                                 <span>Customer Support</span>
                             </div>
                         </div>
@@ -51,7 +47,7 @@
                             </div>
                         </div>
                     </div>
-                    <a href="{{'contact'}}" class="theme-btn btn-style-two"><i
+                    <a href="{{ route('contact')}}" class="theme-btn btn-style-two"><i
                             class="icon fa fas fa-plus"></i><span class="btn-title">{{__('words.contact')}}</span></a>
 
                     <div class="mobile-nav-toggler"><span class="icon lnr-icon-bars"></span></div>
@@ -81,9 +77,9 @@
 
                                 <li class="dropdown"><a href="#">{{__('words.language')}}</a>
                                     <ul>
-                                        <li><a href="/uz">uz</a></li>
-                                        <li><a href="/ru">ru</a></li>
-                                        <li><a href="/en">en</a></li>
+                                        <li><a href="/uz">UZ</a></li>
+                                        <li><a href="/ru">RU</a></li>
+                                        <li><a href="/en">EN</a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -124,25 +120,25 @@
 
                     <div class="contact-info-box">
                         <i class="icon lnr-icon-phone-handset"></i>
-                        <span class="title">Call Now</span>
-                        <a href="tel:+92880098670">+92 (8800) - 98670</a>
+                        <span class="title">{{__('words.phone')}}</span>
+                        <a href="tel:+998998405555">+998 99 840 55 55</a>
                     </div>
                 </li>
                 <li>
 
                     <div class="contact-info-box">
                         <span class="icon lnr-icon-envelope1"></span>
-                        <span class="title">Send Email</span>
-                        <a href="/cdn-cgi/l/email-protection#0169646d7141626e6c71606f782f626e6c"><span
+                        <span class="title">{{__('words.send')}} {{__('words.email')}}</span>
+                        <a href="mailto:info@megagold.uz"><span
                                 class="__cf_email__"
-                                data-cfemail="bfd7dad3cfffdcd0d2cfded1c691dcd0d2">[email&#160;protected]</span></a>
+                                data-cfemail="bfd7dad3cfffdcd0d2cfded1c691dcd0d2">info@megagold.uz<span></a>
                     </div>
                 </li>
                 <li>
 
                     <div class="contact-info-box">
                         <span class="icon lnr-icon-clock"></span>
-                        <span class="title">Send Email</span>
+                        <span class="title">{{__('words.send')}} {{__('words.email')}}</span>
                         Mon - Sat 8:00 - 6:30, Sunday - CLOSED
                     </div>
                 </li>
@@ -157,30 +153,15 @@
     </div>
 
 
-    <div class="search-popup">
-        <span class="search-back-drop"></span>
-        <button class="close-search"><span class="fa fa-times"></span></button>
-        <div class="search-inner">
-            <form method="post" action="index.html">
-                <div class="form-group">
-                    <input type="search" name="search-field" value="" placeholder="Search..." required="">
-                    <button type="submit"><i class="fa fa-search"></i></button>
-                </div>
-            </form>
-        </div>
-    </div>
-
 
     <div class="sticky-header">
         <div class="auto-container">
             <div class="inner-container">
 
                 <div class="logo">
-                    <a href="index.html" title=""><img src="/assets/images/logo.png" alt="" title=""></a>
+                    <a href="{{ route('index')}}" title=""><img src="/assets/images/logo-white.png" alt="" title=""></a>
                 </div>
-
                 <div class="nav-outer">
-
                     <nav class="main-menu">
                         <div class="navbar-collapse show collapse clearfix">
                             <ul class="navigation clearfix">
@@ -188,7 +169,6 @@
                             </ul>
                         </div>
                     </nav>
-
                     <div class="mobile-nav-toggler"><span class="icon lnr-icon-bars"></span></div>
                 </div>
             </div>
