@@ -10,7 +10,7 @@ return
         'product' => 'Mahsulotlar',
         'category' => 'Kategoriya',
         'contact' => "Bog'lanish",
-        'our' => 'bizning',
+        'our' => 'Bizning',
         'blog' => 'Blog',
         'size' => 'Hajmi',
         'cost' => 'Narxi',
@@ -64,13 +64,13 @@ return
 
         "serv_pac" => "Xizmat paketi",
         "what" => "Nima uchun biz?",
-        "high" => "Yuqori sifat=>",
+        "high" => "Yuqori sifat",
         "high_desc" => "Bizning barcha metall mahsulotlarimiz yuqori sifatli va xalqaro standartlarga mos ravishda ishlab chiqarilgan. Har bir mahsulotimiz kuchli, chidamli va uzoq muddat xizmat qiladi.",
         
-        "high2" => "Keng assortiment=>",
+        "high2" => "Keng assortiment",
         "high_desc2" => "Our catalog includes metal products of various sizes and shapes. This allows you to choose the materials that are most suitable for your project.",
         
-        "high3" => "Maxsus buyurtmalar=>",
+        "high3" => "Maxsus buyurtmalar",
         "high_desc3" => "Biz maxsus talablar asosida ishlab chiqarilgan metall mahsulotlarni taklif etamiz. Sizning texnik xususiyatlaringiz va o'lchamlaringiz bo'yicha buyurtmalarni qabul qilamiz.",
     
 
