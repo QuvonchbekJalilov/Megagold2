@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\About;
 use App\Models\ActiveClient;
+use App\Models\banner;
 use App\Models\Blog;
 use App\Models\Category;
 use App\Models\CategoryOfProduct;
@@ -27,7 +28,7 @@ class MainController extends Controller
     {
 
         $visitorCount = DB::table('website_visits')->count();
-
+        $banners = banner::all();
         $homes = Home::latest()->take(1)->get();
         $abouts = About::latest()->take(1)->get();
         $photos = CategoryOfProduct::orderBy('created_at', 'desc')->take(6)->get(['id', 'name_uz', 'name_ru', 'name_en', 'photo', 'category_id']);
@@ -58,7 +59,8 @@ class MainController extends Controller
             'our_teams',
             'commits',
             'photos',
-            'visitorCount'
+            'visitorCount',
+            'banners'
         ));
     }
 

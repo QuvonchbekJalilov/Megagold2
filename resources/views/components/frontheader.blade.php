@@ -47,7 +47,7 @@
                             </div>
                         </div>
                     </div>
-                    <a href="{{ route('contact')}}" class="theme-btn btn-style-two"><i
+                    <a href="page-contact.html" class="theme-btn btn-style-two"><i
                             class="icon fa fas fa-plus"></i><span class="btn-title">Contact Us</span></a>
 
                     <div class="mobile-nav-toggler"><span class="icon lnr-icon-bars"></span></div>

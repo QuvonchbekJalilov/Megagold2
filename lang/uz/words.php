@@ -2,6 +2,7 @@
 
 return
     [
+        'our_team' => 'Jamoamiz a`zolari bilan tanishing',
         'home' => 'Asosiy',
         'about' => 'Biz haqimizda',
          'megagold'=>'Mega Metal Gold',

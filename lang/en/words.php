@@ -2,6 +2,7 @@
 
 return
     [
+        'our_team' => 'Meet Our Team',
         'home' => 'Home',
         'about' => 'About Us',
         'megagold' => 'Mega Metal Gold',
