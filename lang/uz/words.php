@@ -64,6 +64,12 @@ return [
         "what" => "Nima uchun biz?",
         "high" => "Yuqori sifat:",
         "high_desc" => "Bizning barcha metall mahsulotlarimiz yuqori sifatli va xalqaro standartlarga mos ravishda ishlab chiqarilgan. Har bir mahsulotimiz kuchli, chidamli va uzoq muddat xizmat qiladi.",
+        
+        "high2" => "Keng assortiment:",
+        "high_desc2" => "Our catalog includes metal products of various sizes and shapes. This allows you to choose the materials that are most suitable for your project.",
+        
+        "high3" => "Maxsus buyurtmalar:",
+        "high_desc3" => "Biz maxsus talablar asosida ishlab chiqarilgan metall mahsulotlarni taklif etamiz. Sizning texnik xususiyatlaringiz va o'lchamlaringiz bo'yicha buyurtmalarni qabul qilamiz.",
     
 
 
@@ -75,7 +81,7 @@ return [
         "rang_txt1" => "AVTO TRANSPORT",
         "rang_txt2" => "HAVO TRANSPORTI",
         "rang_txt3" => "OKEAN TRANSPORTI",
-        "rang_txt4" => "POYDOL TRANSPORTI",
+        "rang_txt4" => "POEZD TRANSPORTI",
 
         "serv_pac22" => "Xizmat paketi",
         "our_values" => "Qadriyatlarimiz",
@@ -86,6 +92,6 @@ return [
         "radio_txt3" => "Mijozlarga yo'naltirilganlik",
 
         "radio_txt4" => "Innovatsiya",
-        "radio_txt2" => "Jamoaviy ish",
-        "radio_txt3" => "Mas'uliyat",
+        "radio_txt5" => "Jamoaviy ish",
+        "radio_txt6" => "Mas'uliyat",
 ];

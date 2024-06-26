@@ -202,8 +202,8 @@ $lang = \Illuminate\Support\Facades\App::getLocale();
                     <div class="bg-image" style="background-image: url(/assets/images/resource/service6-2.jpg);"></div>
                     <div class="inner-container">
                         <div class="sec-title style-three">
-                            <span class="sub-title">Service Package</span>
-                            <h2>Why You Choose Us?</h2>
+                            <span class="sub-title">{{__('words.serv_pac')}}</span>
+                            <h2>{{__('words.what')}}</h2>
                         </div>
                         <div class="about-info">
                             <div class="icon-box">
@@ -211,9 +211,9 @@ $lang = \Illuminate\Support\Facades\App::getLocale();
                                 <i class="icon flaticon-logistics-delivery-6"></i>
                             </div>
                             <div class="content-box">
-                                <h4 class="title">Transparent Pricing</h4>
-                                <div class="text">Laoreet ultrices ligula iaculis viverra, ultricies blandit rutrum
-                                    <br>habitant at aptent bibendum cum nec.
+                                <h4 class="title">{{__('words.high')}}</h4>
+                                <div class="text">
+                                    {{__('words.high_desc')}}
                                 </div>
                             </div>
                         </div>
@@ -223,9 +223,9 @@ $lang = \Illuminate\Support\Facades\App::getLocale();
                                 <i class="icon flaticon-container-2"></i>
                             </div>
                             <div class="content-box">
-                                <h4 class="title">Warehouse Storage</h4>
-                                <div class="text">Laoreet ultrices ligula iaculis viverra, ultricies blandit rutrum
-                                    <br>habitant at aptent bibendum cum nec.
+                                <h4 class="title">{{__('words.high2')}}</h4>
+                                <div class="text">
+                                    {{__('words.high_desc2')}}
                                 </div>
                             </div>
                         </div>
@@ -235,9 +235,9 @@ $lang = \Illuminate\Support\Facades\App::getLocale();
                                 <i class="icon flaticon-3d-cube"></i>
                             </div>
                             <div class="content-box">
-                                <h4 class="title">Real-Time Tracking</h4>
-                                <div class="text">Laoreet ultrices ligula iaculis viverra, ultricies blandit rutrum
-                                    <br>habitant at aptent bibendum cum nec.
+                                <h4 class="title">{{__('words.high3')}}</h4>
+                                <div class="text">
+                                    {{__('words.high_desc3')}}
                                 </div>
                             </div>
                         </div>
@@ -412,11 +412,10 @@ $lang = \Illuminate\Support\Facades\App::getLocale();
                         <div class="services-block">
                             <div class="inner-block">
                                 <div class="sec-title style-three mb-0">
-                                    <span class="sub-title">Service Package</span>
-                                    <h2>We Provide Full Assistance in Freight & Warehousing</h2>
-                                    <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                        do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                                        minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip eam
+                                    <span class="sub-title">{{__('words.serv_pac2')}}</span>
+                                    <h2>{{__('words.our_customers')}}</h2>
+                                    <div class="text">
+                                        {{__('words.customers_desc')}}
                                     </div>
                                 </div>
 
@@ -424,7 +423,7 @@ $lang = \Illuminate\Support\Facades\App::getLocale();
 
                                     <div class="skill-item">
                                         <div class="skill-header">
-                                            <h6 class="skill-title">ROAD TRANSPORT</h6>
+                                            <h6 class="skill-title">{{__('words.rang_txt1')}}</h6>
                                         </div>
                                         <div class="skill-bar">
                                             <div class="bar-inner">
@@ -439,7 +438,7 @@ $lang = \Illuminate\Support\Facades\App::getLocale();
 
                                     <div class="skill-item">
                                         <div class="skill-header">
-                                            <h6 class="skill-title">AIR TRANSPORT</h6>
+                                            <h6 class="skill-title">{{__('words.rang_txt2')}}</h6>
                                         </div>
                                         <div class="skill-bar">
                                             <div class="bar-inner">
@@ -454,7 +453,7 @@ $lang = \Illuminate\Support\Facades\App::getLocale();
 
                                     <div class="skill-item">
                                         <div class="skill-header">
-                                            <h6 class="skill-title">OCEAN TRANSPORT</h6>
+                                            <h6 class="skill-title">{{__('words.rang_txt3')}}</h6>
                                         </div>
                                         <div class="skill-bar">
                                             <div class="bar-inner">
@@ -469,7 +468,7 @@ $lang = \Illuminate\Support\Facades\App::getLocale();
 
                                     <div class="skill-item">
                                         <div class="skill-header">
-                                            <h6 class="skill-title">TRAIN TRANSPORT</h6>
+                                            <h6 class="skill-title">{{__('words.rang_txt4')}}</h6>
                                         </div>
                                         <div class="skill-bar">
                                             <div class="bar-inner">
@@ -488,21 +487,20 @@ $lang = \Illuminate\Support\Facades\App::getLocale();
                         <div class="services-block mb-0">
                             <div class="inner-block">
                                 <div class="sec-title style-three mb-0">
-                                    <span class="sub-title">Service Package</span>
-                                    <h2>Solving challenges in every industry, every day.</h2>
-                                    <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                        do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                                    <span class="sub-title">{{__('words.serv_pac22')}}</span>
+                                    <h2>{{__('words.our_values')}}</h2>
+                                    <div class="text">{{__('words.our_values_desc')}}</div>
                                 </div>
                                 <div class="row">
                                     <ul class="list-style-two style-two col-sm-6">
-                                        <li>Web & Mobile Responsive</li>
-                                        <li>Web & Mobile Responsive</li>
-                                        <li>Custom Domain Support</li>
+                                        <li>{{__('words.radio_txt1')}}</li>
+                                        <li>{{__('words.radio_txt2')}}</li>
+                                        <li>{{__('words.radio_txt3')}}</li>
                                     </ul>
                                     <ul class="list-style-two style-two col-sm-6">
-                                        <li>Web & Mobile Responsive</li>
-                                        <li>Web & Mobile Responsive</li>
-                                        <li>Custom Domain Support</li>
+                                        <li>{{__('words.radio_txt4')}}</li>
+                                        <li>{{__('words.radio_txt5')}}</li>
+                                        <li>{{__('words.radio_txt6')}}</li>
                                     </ul>
                                 </div>
                                 <a href="page-contact.html" class="theme-btn btn-style-two"><i class="icon fa fas fa-plus"></i><span class="btn-title">Request A
