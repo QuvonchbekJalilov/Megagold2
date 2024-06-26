@@ -27,7 +27,7 @@
         <div class="auto-container">
             <div class="inner-container">
                 <div class="logo-box">
-                    <div class="logo"><a href="index.html"><img class="logos" height="50px" src="/assets/mgm.png"
+                    <div class="logo"><a href=""><img class="logos" height="50px" src="/assets/images/logo.png"
                                 alt="" title="Transend"></a></div>
                 </div>
                 <div class="outer-box">
@@ -75,7 +75,7 @@
                                 <li><a href="{{ route('index')}}">{{__('words.home')}}</a></li>
 
                                 <li><a href="{{route('about')}}">{{__('words.about')}}</a></li>
-                                <li><a href="{{route('category')}}">{{__('words.category')}}</a></li>
+                                <li><a href="{{route('product')}}">{{__('words.category')}}</a></li>
                                 <li><a href="{{route('blog')}}">{{__('words.blog')}}</a></li>
                                 <li><a href="{{route('contact')}}">{{__('words.contact')}}</a></li>
 

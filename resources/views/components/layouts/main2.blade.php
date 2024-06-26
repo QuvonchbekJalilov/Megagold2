@@ -19,7 +19,6 @@
 <body>
     <div class="page-wrapper">
 
-        <div class="preloader"></div>
 
         <x-frontheader2></x-frontheader2>
           {{$slot}}

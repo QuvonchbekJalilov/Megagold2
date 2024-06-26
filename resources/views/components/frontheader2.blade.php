@@ -36,7 +36,7 @@
                                 <li><a href="{{ route('index')}}">{{__('words.home')}}</a></li>
 
                                 <li><a href="{{route('about')}}">{{__('words.about')}}</a></li>
-                                <li><a href="{{route('category')}}">{{__('words.category')}}</a></li>
+                                <li><a href="{{route('product')}}">{{__('words.category')}}</a></li>
                                 <li><a href="{{route('blog')}}">{{__('words.blog')}}</a></li>
                                 <li><a href="{{route('contact')}}">{{__('words.contact')}}</a></li>
 
@@ -53,7 +53,6 @@
                     </div>
                 </div>
                 <div class="outer-box">
-                    <a href="page-contact.html" class="theme-btn btn-style-one"><i class="icon fa fas fa-plus"></i><span class="btn-title">Request A Quote</span></a>
 
                     <div class="grid-nav-btn mobile-nav-toggler">
                         <div class="inner">
