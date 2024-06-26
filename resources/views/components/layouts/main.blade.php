@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Transend | Logistic & Transport HTML Template | Home Page 05 Dark</title>
+    <title>Mega Metal Gold</title>
 
     <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="/assets/plugins/revolution/css/settings.css" rel="stylesheet" type="text/css">
@@ -11,8 +11,8 @@
     <link href="/assets/plugins/revolution/css/navigation.css" rel="stylesheet" type="text/css">
     <link href="/assets/css/style.css" rel="stylesheet">
     <link href="/assets/css/style-dark.css" rel="stylesheet">
-    <link rel="shortcut icon" href="/assets/images/favicon.png" type="image/x-icon">
-    <link rel="icon" href="/assets/images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/assets/images/Shapemgm2-01.png" type="image/x-icon">
+    <link rel="icon" href="/assets/images/Shapemgm2-01.png" type="image/x-icon">
     <style>
         .logos {
             height: 65px !important;

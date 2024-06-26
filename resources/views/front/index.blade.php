@@ -19,10 +19,10 @@ $lang = \Illuminate\Support\Facades\App::getLocale();
                                 logistics experts <br>and advanced tracking systems ensure that your freight...
                             </div>
                             <div class="btn-box animate-4">
-                                <a href="page-contact.html" class="theme-btn btn-style-two"><i class="icon fa fas fa-plus"></i><span class="btn-title">Request A
-                                        Quote</span></a>
-                                <a href="page-services.html" class="theme-btn btn-style-two"><i class="icon fa fas fa-plus"></i><span class="btn-title">Our
-                                        Services</span></a>
+                                <a href="{{route('contact')}}" class="theme-btn btn-style-two"><i class="icon fa fas fa-plus"></i><span class="btn-title">{{__('words.contact')}}
+                                    </span></a>
+                                <a href="{{route('category')}}" class="theme-btn btn-style-two"><i class="icon fa fas fa-plus"></i><span class="btn-title">{{__('words.category')}}
+                                        </span></a>
                             </div>
                         </div>
                         <div class="image-column col-xl-5 col-lg-4 col-md-12 col-sm-12 order-lg-2">
@@ -35,32 +35,6 @@ $lang = \Illuminate\Support\Facades\App::getLocale();
                 </div>
             </div>
 
-            <div class="slide-item">
-                <div class="bg-image" style="background-image: url(/assets/images/main-slider/6-dark.jpg);"></div>
-                <div class="auto-container">
-                    <div class="row">
-                        <div class="content-box col-xl-7 col-lg-8 col-md-12 col-sm-12 order-2 pe-lg-0">
-                            <h1 class="title animate-2">Flexibile, Improved <br class="d-none d-xxl-block">Service
-                                Levels & Expedite <br class="d-none d-xxl-block">Delivery!</h1>
-                            <div class="text animate-3">We understand the importance of timely delivery. Our
-                                logistics experts <br>and advanced tracking systems ensure that your freight...
-                            </div>
-                            <div class="btn-box animate-4">
-                                <a href="page-contact.html" class="theme-btn btn-style-two"><i class="icon fa fas fa-plus"></i><span class="btn-title">Request A
-                                        Quote</span></a>
-                                <a href="page-services.html" class="theme-btn btn-style-two"><i class="icon fa fas fa-plus"></i><span class="btn-title">Our
-                                        Services</span></a>
-                            </div>
-                        </div>
-                        <div class="image-column col-xl-5 col-lg-4 col-md-12 col-sm-12 order-lg-2">
-                            <div class="image-box">
-                                <figure class="image animate-4 animate-x"><img src="/assets/images/main-slider/7.png" alt="">
-                                </figure>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
 
@@ -185,14 +159,11 @@ $lang = \Illuminate\Support\Facades\App::getLocale();
         <div class="auto-container">
             <div class="row">
                 <div class="sec-title style-three col-xl-7">
-                    <span class="sub-title">Service Package</span>
-                    <h2>Solving IT challenges in every <br>industry, every day.</h2>
-                    <div class="text">Efficient transportation is at the heart of a successful supply chain. We
-                        provide end-to-end transportation management services, including route planning, carrier
-                        selection, freight consolidation, and shipment tracking. Our extensive network of trusted
-                        carriers ensures reliable and timely delivery of your goods, while our advanced tracking
-                        systems provide real-time visibility, giving you complete control over your shipments.</div>
-                    <a href="page-contact.html" class="theme-btn btn-style-two"><i class="icon fa fas fa-plus"></i><span class="btn-title">Request A Quote</span></a>
+                    <span class="sub-title">{{__('words.about')}}</span>
+                    <h2>{{__('words.megagold')}}</h2>
+                    <div class="text">{{__('words.megagold_about')}}</div>
+                    <a href="{{route('contact')}}" class="theme-btn btn-style-two"><i
+                            class="icon fa fas fa-plus"></i><span class="btn-title">{{__('words.contact')}}</span></a>
                 </div>
                 <div class="services-column col-xl-4 offset-xl-1">
                     <div class="inner-column">
@@ -551,75 +522,29 @@ $lang = \Illuminate\Support\Facades\App::getLocale();
             <span class="icon shape-17"></span>
         </div>
         <div class="sec-title style-three light text-center">
-            <span class="sub-title">Current Services</span>
-            <h2>Most Service We Provide</h2>
+
+            <h2>{{__('words.category')}}</h2>
         </div>
         <div class="auto-container">
             <ul class="project-block-four">
-                <li class="inner-box">
-                    <div class="row align-items-center">
-                        <div class="top-box col-md-1">
-                            <div class="number">01</div>
+                @foreach($categories as $tm)
+                    <li class="inner-box">
+                        <div class="row align-items-center">
+                            <div class="top-box col-md-1">
+                                <div class="number">0{{ $loop->iteration }}</div>
+                            </div>
+                            <div class="center-box col-md-10">
+                                <h4 class="title">{{ $tm['name_'.$lang]}}</h4>
+                                <figure class="image mb-0"><img src="{{ asset('storage/' . $tm->photo) }}" alt="Image" width="150px">
+                                </figure>
+                            </div>
+                            <div class="bottom-box col-md-1">
+                                <a href="{{ route('products', ['product'=> $tm->id])}}" class="theme-btn btn-style-three dark-bg"><i class="icon fa fas fa-plus"></i><span class="btn-title"></span></a>
+                            </div>
                         </div>
-                        <div class="center-box col-md-10">
-                            <h4 class="title">Road Freight Transportation</h4>
-                            <div class="text">We understand the importance of timely delivery.</div>
-                            <figure class="image mb-0"><img src="/assets/images/resource/project-2.png" alt="Image">
-                            </figure>
-                        </div>
-                        <div class="bottom-box col-md-1">
-                            <a href="page-about.html" class="theme-btn btn-style-three dark-bg"><i class="icon fa fas fa-plus"></i><span class="btn-title"></span></a>
-                        </div>
-                    </div>
-                </li>
-                <li class="inner-box">
-                    <div class="row align-items-center">
-                        <div class="top-box col-md-1">
-                            <div class="number">02</div>
-                        </div>
-                        <div class="center-box col-md-10">
-                            <h4 class="title">Train Freight Transportation</h4>
-                            <div class="text">We understand the importance of timely delivery.</div>
-                            <figure class="image mb-0"><img src="/assets/images/resource/project-2.png" alt="Image">
-                            </figure>
-                        </div>
-                        <div class="bottom-box col-md-1">
-                            <a href="page-about.html" class="theme-btn btn-style-three dark-bg"><i class="icon fa fas fa-plus"></i><span class="btn-title"></span></a>
-                        </div>
-                    </div>
-                </li>
-                <li class="inner-box">
-                    <div class="row align-items-center">
-                        <div class="top-box col-md-1">
-                            <div class="number">03</div>
-                        </div>
-                        <div class="center-box col-md-10">
-                            <h4 class="title">Ocean Freight Transportation</h4>
-                            <div class="text">We understand the importance of timely delivery.</div>
-                            <figure class="image mb-0"><img src="/assets/images/resource/project-2.png" alt="Image">
-                            </figure>
-                        </div>
-                        <div class="bottom-box col-md-1">
-                            <a href="page-about.html" class="theme-btn btn-style-three dark-bg"><i class="icon fa fas fa-plus"></i><span class="btn-title"></span></a>
-                        </div>
-                    </div>
-                </li>
-                <li class="inner-box">
-                    <div class="row align-items-center">
-                        <div class="top-box col-md-1">
-                            <div class="number">04</div>
-                        </div>
-                        <div class="center-box col-md-10">
-                            <h4 class="title">Air Freight Transportation</h4>
-                            <div class="text">We understand the importance of timely delivery.</div>
-                            <figure class="image mb-0"><img src="/assets/images/resource/project-2.png" alt="Image">
-                            </figure>
-                        </div>
-                        <div class="bottom-box col-md-1">
-                            <a href="page-about.html" class="theme-btn btn-style-three dark-bg"><i class="icon fa fas fa-plus"></i><span class="btn-title"></span></a>
-                        </div>
-                    </div>
-                </li>
+                    </li>
+                @endforeach
+
             </ul>
         </div>
     </section>

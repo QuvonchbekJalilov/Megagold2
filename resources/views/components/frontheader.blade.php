@@ -10,7 +10,7 @@
                         <li><i class="icon fa fa-phone"></i> <a href="tel:+1234567890">+998 99 123 45 67</a>
                         </li>
                         <li><i class="icon fa fa-envelope"></i> <a
-                                href="support@transend.com">megagold@info.com</span></a></li>
+                                href="support@transend.com">megagold@info.com</a></li>
                     </ul>
                 </div>
                 <div class="top-right">
@@ -27,7 +27,7 @@
         <div class="auto-container">
             <div class="inner-container">
                 <div class="logo-box">
-                    <div class="logo"><a href=""><img class="logos" height="50px" src="/assets/images/logo.png"
+                    <div class="logo"><a href=""><img class="logos" height="50px" src="/assets/images/logo-white.png"
                                 alt="" title="Transend"></a></div>
                 </div>
                 <div class="outer-box">
@@ -71,7 +71,7 @@
                     <div class="nav-outer">
                         <nav class="nav main-menu">
                             <ul class="navigation">
-                                
+
                                 <li><a href="{{ route('index')}}">{{__('words.home')}}</a></li>
 
                                 <li><a href="{{route('about')}}">{{__('words.about')}}</a></li>
