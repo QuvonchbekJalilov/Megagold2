@@ -88,6 +88,6 @@ return
         "radio_txt3" => "Mijozlarga yo'naltirilganlik",
 
         "radio_txt4" => "Innovatsiya",
-        "radio_txt2" => "Jamoaviy ish",
-        "radio_txt3" => "Mas'uliyat",
+        "radio_txt5" => "Jamoaviy ish",
+        "radio_txt6" => "Mas'uliyat",
 ];

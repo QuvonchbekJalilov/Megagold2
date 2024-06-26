@@ -86,6 +86,6 @@ return
         "radio_txt3" => "Customer orientation",
 
         "radio_txt4" => "Innovation",
-        "radio_txt2" => "Team work",
-        "radio_txt3" => "Responsibility",
+        "radio_txt5" => "Team work",
+        "radio_txt6" => "Responsibility",
 ];
